@@ -60,13 +60,13 @@
    - Medium Zoom
     
 ------------------------------------------------ */
-@import url(bootstrap.min.css);
-@import url(swiper.min.css);
-@import url(photoswipe.css);
-@import url(animate.css);
-@import url(videojs-skin.css);
+@import url(assets/styles/bootstrap.min.css);
+@import url(assets/styles/swiper.min.css);
+@import url(assets/styles/photoswipe.css);
+@import url(assets/styles/animate.css);
+@import url(assets/styles/videojs-skin.css);
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900");
-@import url(../icons/fonticons.css);
+@import url(assets/icons/fonticons.css);
 /* -----------------------------------------------------------------
     - General Styles
 ----------------------------------------------------------------- */
