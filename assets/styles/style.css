@@ -367,7 +367,7 @@ button:focus {
 }
 
 .icon-arrow-right {
-  background-image: url(assets/images/arrow-next.svg);
+  background-image: url(../images/arrow-next.svg);
   background-repeat: no-repeat;
   background-position: center;
   display: inline-flex;
@@ -904,7 +904,7 @@ iframe {
 }
 .loading::before {
   content: '';
-  background-image: url(assets/images/logo_white.svg);
+  background-image: url(../assets/images/logo_white.svg);
   background-position: center;
   background-repeat: no-repeat;
   position: absolute;
