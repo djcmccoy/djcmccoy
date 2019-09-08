@@ -367,7 +367,7 @@ button:focus {
 }
 
 .icon-arrow-right {
-  background-image: url(../images/arrow-next.svg);
+  background-image: url(assets/images/arrow-next.svg);
   background-repeat: no-repeat;
   background-position: center;
   display: inline-flex;
@@ -732,7 +732,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 .block-quote::before {
-  background-image: url(../images/icon-quote.svg);
+  background-image: url(assets/images/icon-quote.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -904,7 +904,7 @@ iframe {
 }
 .loading::before {
   content: '';
-  background-image: url(../images/logo_white.svg);
+  background-image: url(images/logo_white.svg);
   background-position: center;
   background-repeat: no-repeat;
   position: absolute;
