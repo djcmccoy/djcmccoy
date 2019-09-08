@@ -904,7 +904,7 @@ iframe {
 }
 .loading::before {
   content: '';
-  background-image: url(images/logo_white.svg);
+  background-image: url(https://raw.githubusercontent.com/deionsvfx/deionsvfx/master/images/logo_white.png);
   background-position: center;
   background-repeat: no-repeat;
   position: absolute;
