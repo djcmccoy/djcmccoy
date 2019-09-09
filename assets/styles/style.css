@@ -4624,4 +4624,8 @@ li:nth-child(4) .menu-list__item span {
   z-index: 9999;
 }
 
+.loading-not-logo::before {
+  display: none;
+}
+
 /*# sourceMappingURL=style.css.map */
