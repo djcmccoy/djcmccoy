@@ -4633,5 +4633,9 @@ li:nth-child(4) .menu-list__item span {
 	margin-bottom: 2rem;
 }
 
+.detail-float-right {
+	float:right;
+}
+
 
 /*# sourceMappingURL=style.css.map */
