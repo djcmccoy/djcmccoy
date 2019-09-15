@@ -4628,4 +4628,10 @@ li:nth-child(4) .menu-list__item span {
   display: none;
 }
 
+.footer-float {
+	margin-left: 4.25rem;
+	margin-bottom: 2rem;
+}
+
+
 /*# sourceMappingURL=style.css.map */
