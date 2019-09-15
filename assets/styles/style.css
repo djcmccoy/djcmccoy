@@ -2695,6 +2695,17 @@ iframe {
   transition: all .5s ease-in-out;
   z-index: 2;
 }
+.onHover__details2 {
+  color: #fff;
+  padding: 0 2rem;
+  opacity: 0;
+  position: inherit;
+  bottom: 0;
+  left: 0;
+  transform: translate3d(0, 100%, 0);
+  transition: all .5s ease-in-out;
+  z-index: 2;
+}
 .onHover .title {
   opacity: 0;
   transform: translate3d(0, 100%, 0);
