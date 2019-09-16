@@ -367,7 +367,7 @@ button:focus {
 }
 
 .icon-arrow-right {
-  background-image: url(https://www.deionsvfx.com/assets/images/arrow-next.svg);
+  background-image: url(assets/images/arrow-next.svg);
   background-repeat: no-repeat;
   background-position: center;
   display: inline-flex;
@@ -4632,10 +4632,5 @@ li:nth-child(4) .menu-list__item span {
 	margin-left: 4.25rem;
 	margin-bottom: 2rem;
 }
-
-.detail-float-right {
-	float:right;
-}
-
 
 /*# sourceMappingURL=style.css.map */
