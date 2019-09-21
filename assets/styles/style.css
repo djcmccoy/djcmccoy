@@ -4633,4 +4633,11 @@ li:nth-child(4) .menu-list__item span {
 	margin-bottom: 2rem;
 }
 
+@media only screen and (max-width: 580px) {
+  .ml-minus {
+    margin-left: 0;
+  }	
+}
+
+
 /*# sourceMappingURL=style.css.map */
