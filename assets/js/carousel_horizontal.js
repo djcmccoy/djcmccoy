@@ -6,7 +6,7 @@ $('body').imagesLoaded().always( function( instance ) {
 		
         var halfSliderCaption = new Swiper('.slider__caption', {
             slidesPerView: 1,
-            //loop: true,
+            loop: true,
             effect: 'fade',
 	        parallax: true,
             speed: 1200,
@@ -15,7 +15,7 @@ $('body').imagesLoaded().always( function( instance ) {
 			
         var halfSliderImage = new Swiper('.slider__image', {
             slidesPerView: 1,
-            //loop: true,
+            loop: true,
 			speed: 1200,
             simulateTouch: false,
 	        roundLengths: true,
