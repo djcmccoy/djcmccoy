@@ -574,28 +574,16 @@ $(document).ready(function() {
             options = {
                 // Buttons/elements
                 captionEl: false,
-                closeEl: false,
+                closeEl: true,
                 arrowEl: false,
-                fullscreenEl: false,
+                fullscreenEl: true,
                 shareEl: false,
                 counterEl: false,
-                zoomEl: false,
+                zoomEl: true,
                 maxSpreadZoom: 1,
 				barsSize: { top: 40, bottom: 40, left: 40, right: 40 },
-                closeElClasses: [
-                    "item",
-                    "caption",
-                    "zoom-wrap",
-                    "ui",
-                    "top-bar",
-                    "img"
-                ],
                 // define gallery index (for URL)
 				galleryUID: 0,
-                //galleryUID: galleryElement.getAttribute("data-pswp-uid"),
-                getDoubleTapZoom: function(isMouseClick, item) {
-                    return item.initialZoomLevel;
-                },
                 pinchToClose: false,
 
                 getThumbBoundsFn: function(index) {
