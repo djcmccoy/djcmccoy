@@ -4940,9 +4940,8 @@ li:nth-child(4) .menu-list__item span {
 
 .video-container {
   position: absolute;
- /* padding-bottom: 30%; /* 16:9 */ 
-  width: 560;
-  height: 135;
+  padding-bottom: 30%; /* 16:9 */ 
+
 }
 .video-container iframe {
   position: absolute;
