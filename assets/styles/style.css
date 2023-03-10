@@ -4939,8 +4939,9 @@ li:nth-child(4) .menu-list__item span {
 }
 
 .video-container {
-  position: absolute;
-  padding-bottom: 30%; /* 16:9 */ 
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
 
 }
 .video-container iframe {
