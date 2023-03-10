@@ -4939,7 +4939,7 @@ li:nth-child(4) .menu-list__item span {
 }
 
 .video-container {
-  position: relative;
+  position: absolute;
  /* padding-bottom: 30%; /* 16:9 */ 
   width: 560;
   height: 135;
@@ -4948,8 +4948,8 @@ li:nth-child(4) .menu-list__item span {
   position: absolute;
   top: 0;
   left: 0;
-  width: 560;
-  height: 135;
+  width: 25%;
+  height: 25%;
 }
 
 /*# sourceMappingURL=style.css.map */
