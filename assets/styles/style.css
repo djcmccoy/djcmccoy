@@ -4940,7 +4940,7 @@ li:nth-child(4) .menu-list__item span {
 
 .video-container {
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 */
+  padding-bottom: 0; /* 16:9 */
   width: 300;
   height: 0;
 }
