@@ -1233,8 +1233,8 @@ button:focus {
 
 .logotype {
   display: inline-block;
-  height: 75px;
-  max-height: 100px;
+  height: 50px;
+  max-height: 75px;
   transition: transform 0.4s cubic-bezier(0.72, 0.16, 0.345, 0.875);
 }
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
