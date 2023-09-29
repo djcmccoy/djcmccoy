@@ -1,17 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 27.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 2000 1000" style="enable-background:new 0 0 2000 1000;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:none;}
-	.st1{font-family:'ProximaNova-Extrabld';}
-	.st2{font-size:600px;}
-	.st3{letter-spacing:30;}
-	.st4{font-family:'ProximaNova-Bold';}
-	.st5{font-size:630px;}
-</style>
-<line class="st0" x1="0" y1="0" x2="0" y2="544.8"/>
-<rect x="-0.5" y="261.9" class="st0" width="2000.5" height="476.5"/>
-<text transform="matrix(1 0 0 1 18.4886 660.3042)"><tspan x="0" y="0" class="st1 st2 st3">[</tspan><tspan x="208.8" y="0" class="st4 st2">DM</tspan><tspan x="1038" y="0" class="st4 st5">4</tspan><tspan x="1414.1" y="0" class="st4 st2 st3">K</tspan><tspan x="1783.7" y="0" class="st1 st2 st3">]</tspan></text>
-<rect x="443" y="369.2" class="st0" width="1421.1" height="81.9"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="2011.51" height="892.14" viewBox="0 0 2011.51 892.14">
+  <path d="m49.63,774.3V253.5h138v59.4h-73.2v402h73.2v59.4H49.63Z"/>
+  <path d="m265.63,660.3v-330h138c109.8,0,180.6,65.4,180.6,165.6s-70.8,164.4-180,164.4h-138.6Zm138.6-261h-59.4v192h58.8c66,0,99.6-43.8,99.6-95.4s-30-96.6-99-96.6Z"/>
+  <path d="m940.63,660.3v-218.4l-91.8,218.4h-36.6l-91.8-218.4v218.4h-79.2v-330h105.6l83.4,200.4,83.4-200.4h106.2v330h-79.2Z"/>
+  <path d="m1363.2,643.29v90.72h-89.46v-90.72h-200.97v-71.19l166.95-258.3h123.48v250.74h54.18v78.75h-54.18Zm-89.46-250.11l-113.4,171.36h113.4v-171.36Z"/>
+  <path d="m1676.13,660.3l-102-129-24,27.6v101.4h-79.2v-330h79.2v139.8l117-139.8h96l-138,155.4,147,174.6h-96Z"/>
+  <path d="m1813.52,774.3v-59.4h73.2v-402h-73.2v-59.4h138v520.8h-138Z"/>
 </svg>
