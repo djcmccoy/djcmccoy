@@ -4953,9 +4953,8 @@ li:nth-child(4) .menu-list__item span {
 
 /* ADDITIONAL CSS*/
 
-.static-img-300px {
-    width: 300px; 
-    height: 300px;
+.ImageClass {
+    width: 50%; 
     object-fit: cover;
 }
 
