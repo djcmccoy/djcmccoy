@@ -4951,4 +4951,13 @@ li:nth-child(4) .menu-list__item span {
   height: 25%;
 }
 
+/* ADDITIONAL CSS*/
+
+.static-img-300px {
+    width: 300px; 
+    height: 300px;
+    object-fit: cover;
+}
+
+
 /*# sourceMappingURL=style.css.map */
