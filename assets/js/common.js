@@ -1408,4 +1408,22 @@ $(document).ready(function() {
         }
         $("#validator-contact").removeClass().addClass(msgClasses).text(msg);
     }
+
+	/* ADDITIONAL JS */
+
+		document.getElementById('themeToggle').addEventListener('click', function() {
+    let body = document.body;
+    let icon = document.getElementById('themeToggle');
+    
+    if (body.classList.contains('light')) {
+        body.classList.remove('light');
+        body.classList.add('dark');
+        icon.textContent = '☀️'; // Change to sun icon for light mode
+    } else {
+        body.classList.remove('dark');
+        body.classList.add('light');
+        icon.textContent = '🌙'; // Change to moon icon for dark mode
+    }
+});
+
 });
