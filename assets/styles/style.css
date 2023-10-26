@@ -4998,4 +4998,14 @@ body.dark .logo-link img.logotype__front {
     display: none;
 }
 
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+button, .someOtherElementClass {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
 /*# sourceMappingURL=style.css.map */
