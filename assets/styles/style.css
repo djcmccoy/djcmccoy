@@ -1,3 +1,9 @@
+:root {
+    --light-bg: white;
+    --light-text: black;
+    --dark-bg: black;
+    --dark-text: white;
+}
 /* ------------------------------------------------
  Author: ArtStyles (Art)
  
