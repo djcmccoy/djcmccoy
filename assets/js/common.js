@@ -1410,4 +1410,22 @@ $(document).ready(function() {
     }
 
 	/* ADDITIONAL JS */
+
+	document.getElementById("themeToggle").addEventListener("click", function() {
+    // ... your existing theme toggle logic ...
+
+    // Toggle the dark-theme class on the body
+    var isDarkMode = document.body.classList.toggle("dark-theme");
+
+    // Depending on the theme, hide/show the appropriate logo
+    if (isDarkMode) {
+        document.querySelector(".light-logo").classList.add("hidden");
+        document.querySelector(".dark-logo").classList.remove("hidden");
+    } else {
+        document.querySelector(".dark-logo").classList.add("hidden");
+        document.querySelector(".light-logo").classList.remove("hidden");
+    }
+});
+
+	
 });
