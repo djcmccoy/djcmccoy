@@ -5020,5 +5020,16 @@ button, .buttonTransition {
     pointer-events: none; /* To ensure that the hidden logo isn't clickable or interactive */
 }
 
+/* Assuming body has a class "dark-theme" when dark theme is active */
+
+body.dark-theme .light-logo {
+    display: none;
+}
+
+body.dark-theme .dark-logo {
+    display: block;
+}
+
+
 
 /*# sourceMappingURL=style.css.map */
