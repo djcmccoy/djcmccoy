@@ -5008,4 +5008,17 @@ button, .buttonTransition {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+.logo {
+    transition: opacity 0.3s ease;
+    display: block;
+    opacity: 1;
+}
+
+/* When hiding, instead of using display: none, we'll use opacity */
+.logo.hidden {
+    opacity: 0;
+    pointer-events: none; /* To ensure that the hidden logo isn't clickable or interactive */
+}
+
+
 /*# sourceMappingURL=style.css.map */
