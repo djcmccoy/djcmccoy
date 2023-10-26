@@ -4953,10 +4953,15 @@ li:nth-child(4) .menu-list__item span {
 
 /* ADDITIONAL CSS*/
 
-.ImageClass {
-    width: 50%; 
-    object-fit: cover;
-    object-position: 50% 20%;
+/* Light Theme */
+body.light {
+    background-color: white;
+    color: black;
+}
+/* Dark Theme */
+body.dark {
+    background-color: black;
+    color: white;
 }
 
 
