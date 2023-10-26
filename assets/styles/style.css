@@ -4955,14 +4955,40 @@ li:nth-child(4) .menu-list__item span {
 
 /* Light Theme */
 body.light {
-    background-color: white;
-    color: black;
-}
-/* Dark Theme */
-body.dark {
-    background-color: black;
-    color: white;
+    background-color: var(--light-bg);
+    color: var(--light-text);
 }
 
+body.light .light-text,
+body.light h1, body.light h6, body.light p, body.light a, body.light button {
+    color: var(--light-text);
+}
+
+body.light .logo-link img.logotype__back {
+    display: none;
+}
+
+body.light .logo-link img.logotype__front {
+    display: block;
+}
+
+/* Dark Theme */
+body.dark {
+    background-color: var(--dark-bg);
+    color: var(--dark-text);
+}
+
+body.dark .light-text,
+body.dark h1, body.dark h6, body.dark p, body.dark a, body.dark button {
+    color: var(--dark-text);
+}
+
+body.dark .logo-link img.logotype__back {
+    display: block;
+}
+
+body.dark .logo-link img.logotype__front {
+    display: none;
+}
 
 /*# sourceMappingURL=style.css.map */
