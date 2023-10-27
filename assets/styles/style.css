@@ -4960,19 +4960,21 @@ li:nth-child(4) .menu-list__item span {
 
 /*ADDITIONAL CSS */
 
-/* Base Styles for Elements */
-body, p, h1, h2, h3, h4, h5, h6, a {
-    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition for theme change */
-}
-
-/* Light Theme Styles */
-body[data-theme='light'] {
-    background-color: #ffffff;
+/* Base Styles */
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: #ffffff; /* default to light theme */
     color: #110F10;
 }
 
-body[data-theme='light'] a {
+a, .btn-link {
+    transition: color 0.3s ease;
     color: #110F10;
+}
+
+/* Theme invert: Elements that should switch their colors based on the theme */
+.theme-invert {
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Dark Theme Styles */
@@ -4981,21 +4983,29 @@ body[data-theme='dark'] {
     color: #ffffff;
 }
 
-body[data-theme='dark'] a {
+body[data-theme='dark'] a,
+body[data-theme='dark'] .btn-link {
     color: #ffffff;
 }
 
-/* Theme Inversion */
-/* Light Theme */
-body[data-theme='light'] .theme-invert {
-    filter: invert(0%); /* No inversion for light theme */
-}
-
-/* Dark Theme */
 body[data-theme='dark'] .theme-invert {
-    filter: invert(100%); /* Inversion for dark theme */
+    background-color: #ffffff;
+    color: #110F10;
 }
 
+/* For elements that should be inverted in the light theme */
+.theme-invert {
+    background-color: #110F10;
+    color: #ffffff;
+}
 
+/* Hamburger styles */
+.hamburger {
+    transition: background-color 0.3s ease;
+}
+
+body[data-theme='dark'] .hamburger {
+    background-color: #ffffff;
+}
 
 /* sourceMappingURL=style.css.map */
