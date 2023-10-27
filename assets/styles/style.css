@@ -4959,10 +4959,12 @@ li:nth-child(4) .menu-list__item span {
 }
 
 /*ADDITIONAL CSS */
+/* ... other parts of your existing CSS ... */
 
 body {
-    /* ... other styles ... */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Add transitions for background and text color */
+    background-color: #fff; 
+    color: #333; 
+    transition: background-color 0.3s ease, color 0.3s ease; 
 }
 
 body.dark-theme {
@@ -4970,17 +4972,19 @@ body.dark-theme {
     color: #fff;
 }
 
-.logo {
-    transition: opacity 0.3s ease;
-    opacity: 1;
+.light-logo {
+    display: block;
 }
 
-.hidden {
-    opacity: 0;
-    pointer-events: none;  /* This ensures that the hidden logo is not clickable */
+.dark-logo {
+    display: none;
 }
 
+body.dark-theme .light-logo {
+    display: none;
+}
 
-
-
+body.dark-theme .dark-logo {
+    display: block;
+}
 /*# sourceMappingURL=style.css.map */
