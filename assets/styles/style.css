@@ -4991,24 +4991,16 @@ body.light-theme .logotype__back.dark-logo {
 
 /* ELEMENTS */
 
-/* Default styles (Light Theme) */
-body {
-    color: black;
-    background-color: white;
+/* Default (Light) Theme styles */
+.title, .description, .btn-link {
+    color: #110F10; /* Dark text for light theme */
 }
 
-nav {
-    background-color: lightgray;
-}
-
-/* Dark Theme overrides */
-body.dark-theme {
-    color: white;
-    background-color: black;
-}
-
-body.dark-theme nav {
-    background-color: darkgray;
+/* Dark Theme styles */
+body.dark-theme .title, 
+body.dark-theme .description, 
+body.dark-theme .btn-link {
+    color: #fff; /* White text for dark theme */
 }
 
 
