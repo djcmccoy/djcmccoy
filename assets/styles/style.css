@@ -4991,5 +4991,25 @@ body.light-theme .logotype__back.dark-logo {
 
 /* ELEMENTS */
 
+/* Default styles (Light Theme) */
+body {
+    color: black;
+    background-color: white;
+}
+
+nav {
+    background-color: lightgray;
+}
+
+/* Dark Theme overrides */
+body.dark-theme {
+    color: white;
+    background-color: black;
+}
+
+body.dark-theme nav {
+    background-color: darkgray;
+}
+
 
 /*# sourceMappingURL=style.css.map */
