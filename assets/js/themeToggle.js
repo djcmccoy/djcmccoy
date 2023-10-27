@@ -1,23 +1,16 @@
-document.addEventListener("DOMContentLoaded", function() {
+// Check if a theme is saved in localStorage
+if (localStorage.getItem('theme')) {
+    document.body.dataset.theme = localStorage.getItem('theme');
+}
 
-    // Get the theme toggle element
-    const themeToggle = document.getElementById('themeToggle');
+document.getElementById('themeToggle').addEventListener('click', function() {
+    let currentTheme = document.body.dataset.theme;
 
-    // Check local storage for theme preference
-    const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
-
-    // If there's a theme saved in local storage, set it
-    if (currentTheme) {
-        document.body.setAttribute('data-theme', currentTheme);
+    if (currentTheme === 'dark') {
+        document.body.dataset.theme = 'light';
+        localStorage.setItem('theme', 'light');
+    } else {
+        document.body.dataset.theme = 'dark';
+        localStorage.setItem('theme', 'dark');
     }
-
-    // Toggle theme on click
-    themeToggle.addEventListener('click', function() {
-        let theme = 'light';
-        if (document.body.getAttribute('data-theme') === 'light') {
-            theme = 'dark';
-        }
-        document.body.setAttribute('data-theme', theme);
-        localStorage.setItem('theme', theme);
-    });
 });
