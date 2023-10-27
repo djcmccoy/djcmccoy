@@ -1421,25 +1421,4 @@ document.getElementById("themeToggle").addEventListener("click", function() {
     }
 });	
 
-document.getElementById('themeToggle').addEventListener('click', function() {
-    let body = document.body;
-    
-    if (body.classList.contains('light-theme')) {
-        body.classList.remove('light-theme');
-    } else {
-        body.classList.add('light-theme');
-    }
-});
-
-	document.getElementById("themeToggle").addEventListener("click", function() {
-    let bodyElement = document.body;
-
-    if (bodyElement.classList.contains("dark-theme")) {
-        bodyElement.classList.remove("dark-theme");
-    } else {
-        bodyElement.classList.add("dark-theme");
-    }
-});
-
-
 });
