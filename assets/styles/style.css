@@ -4995,6 +4995,18 @@ nav[data-theme="dark"] {
     border: 1px solid #00ccff; /* Adjust as needed */
 }
 
+/* ELEMENT INVERT LIGHT THEME*/
+.theme-invert {
+    color: #000; /* Dark color for light theme */
+    background-color: transparent; /* You can adjust this as per your requirements */
+}
+
+/* ELEMENT INVERT DARK THEME*/
+body[data-theme='dark'] .theme-invert {
+    color: #fff; /* Light color for dark theme */
+    background-color: transparent; /* Adjust as per your requirements */
+}
+
 /* Add any other element-specific theme styles using the [data-theme] attribute */
 
 /* sourceMappingURL=style.css.map */
