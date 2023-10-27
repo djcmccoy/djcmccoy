@@ -59,19 +59,22 @@
 
     <!-- Top -->
 	<nav class="navbar">
-        <div class="mr-auto logo-container">
-            <a class="logo-link" href="index.html">
-                <img src="path/to/dark-logo.svg" alt="Logo" class="logo dark-logo" style="display: none;">
-				<img class="logotype logotype__back logo light-logo" src="assets/images/logo_white.svg" alt="DM4K">
-			</a>
-        </div>
+	         <div class="mr-auto logo-container">
+	        <!-- Light logo -->
+	        <a class="logo-link" href="index.html">
+	            <img class="logotype logotype__front light-logo" src="path/to/light-logo.svg" alt="Logo" />
+	            <!-- Dark logo -->
+	            <img class="logotype logotype__back dark-logo hidden" src="path/to/dark-logo.svg" alt="Logo" />
+	        </a>
+	    </div>
 		<div class="ml-sm-auto">
 			 <!-- Theme Toggle -->
        			 <span id="themeToggle" style="cursor: pointer; margin-right: 10px; margin-left:20px">🌙</span>
 			 <!-- Theme Toggle -->
-			<button class="hamburger zoom-cursor buttonTransition" type="button">
-                <span class="hamburger__inner buttonTransition"></span>
-            </button>
+			 <!-- Theme Toggle using Hamburger -->
+	        <button class="hamburger zoom-cursor" type="button">
+	            <span class="hamburger__inner"></span>
+	        </button>
 	    </div>
 	</nav>
 	<!-- /Top -->
