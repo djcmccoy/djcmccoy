@@ -1407,33 +1407,5 @@ $(document).ready(function() {
            var msgClasses = "validation-danger";
         }
         $("#validator-contact").removeClass().addClass(msgClasses).text(msg);
-    }
-
-/* ADDITIONAL JS */
-/* THEME SWITCH*/
-
-document.getElementById("themeToggle").addEventListener("click", function() {
-    if(document.body.classList.contains("dark-theme")) {
-        document.body.classList.remove("dark-theme");
-        console.log("Switched to light theme");
-    } else {
-        document.body.classList.add("dark-theme");
-        console.log("Switched to dark theme");
-    }
-});
-/* THEME DATA STORAGE */
-
-	const themeToggle = document.getElementById("themeToggle");
-
-// Set theme on initial load
-document.addEventListener("DOMContentLoaded", function() {
-    const savedTheme = localStorage.getItem("theme");
-    if (savedTheme) {
-        document.body.dataset.theme = savedTheme;
-    } else {
-        // Default theme can be set here if no saved theme is found
-        document.body.dataset.theme = "dark";
-    }
-});
-	
+    }	
 });
