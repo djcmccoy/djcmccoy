@@ -4974,7 +4974,7 @@ a, .btn-link {
 
 /* Theme invert: Elements that should switch their colors based on the theme */
 .theme-invert {
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: color 0.3s ease;
 }
 
 /* Dark Theme Styles */
@@ -4989,13 +4989,11 @@ body[data-theme='dark'] .btn-link {
 }
 
 body[data-theme='dark'] .theme-invert {
-    background-color: #ffffff;
     color: #110F10;
 }
 
 /* For elements that should be inverted in the light theme */
 .theme-invert {
-    background-color: #110F10;
     color: #ffffff;
 }
 
