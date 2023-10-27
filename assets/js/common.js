@@ -1410,6 +1410,7 @@ $(document).ready(function() {
     }
 
 /* ADDITIONAL JS */
+/* THEME SWITCH*/
 
 document.getElementById("themeToggle").addEventListener("click", function() {
     if(document.body.classList.contains("dark-theme")) {
@@ -1420,5 +1421,33 @@ document.getElementById("themeToggle").addEventListener("click", function() {
         console.log("Switched to dark theme");
     }
 });
+/* THEME DATA STORAGE */
+
+	const themeToggle = document.getElementById("themeToggle");
+
+// Set theme on initial load
+document.addEventListener("DOMContentLoaded", function() {
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme) {
+        document.body.dataset.theme = savedTheme;
+    } else {
+        // Default theme can be set here if no saved theme is found
+        document.body.dataset.theme = "dark";
+    }
+});
+
+// Toggle theme function
+themeToggle.addEventListener("click", function() {
+    if (document.body.dataset.theme === "dark") {
+        document.body.dataset.theme = "light";
+    } else {
+        document.body.dataset.theme = "dark";
+    }
+    // Save the current theme to local storage
+    localStorage.setItem("theme", document.body.dataset.theme);
+});
+
+
+	
 	
 });
