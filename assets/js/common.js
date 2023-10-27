@@ -1420,16 +1420,5 @@ document.getElementById("themeToggle").addEventListener("click", function() {
         console.log("Switched to dark theme");
     }
 });
-
-document.getElementById('themeToggle').addEventListener('click', function() {
-    document.body.classList.toggle('dark-theme');
-
-const themeToggle = document.getElementById("themeToggle");
-themeToggle.addEventListener("click", function() {
-    if (document.body.dataset.theme === "dark") {
-        document.body.dataset.theme = "light";
-    } else {
-        document.body.dataset.theme = "dark";
-    }
-});
+	
 });
