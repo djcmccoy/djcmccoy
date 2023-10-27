@@ -4972,5 +4972,23 @@ body.dark-theme {
     background-color: #110F10; /* This is an example color. Change to your dark theme color. */
 }
 
+/* Display the light logo by default (for the light theme) */
+.logotype.light-logo {
+    display: block;
+}
+
+.logotype.dark-logo {
+    display: none;
+}
+
+/* When the dark theme is active, display the dark logo and hide the light one */
+body.dark-theme .logotype.light-logo {
+    display: none;
+}
+
+body.dark-theme .logotype.dark-logo {
+    display: block;
+}
+
 
 /*# sourceMappingURL=style.css.map */
