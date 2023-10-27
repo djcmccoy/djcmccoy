@@ -1411,6 +1411,16 @@ $(document).ready(function() {
 
 /* ADDITIONAL JS*/
 
+document.getElementById("themeToggle").addEventListener("click", function() {
+    if(document.body.classList.contains("dark-theme")) {
+        document.body.classList.remove("dark-theme");
+        console.log("Switched to light theme");
+    } else {
+        document.body.classList.add("dark-theme");
+        console.log("Switched to dark theme");
+    }
+});	
+
 document.getElementById('themeToggle').addEventListener('click', function() {
     let body = document.body;
     
