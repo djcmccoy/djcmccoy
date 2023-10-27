@@ -1409,7 +1409,7 @@ $(document).ready(function() {
         $("#validator-contact").removeClass().addClass(msgClasses).text(msg);
     }
 
-/* ADDITIONAL JS*/
+/* ADDITIONAL JS 
 
 document.getElementById("themeToggle").addEventListener("click", function() {
     if(document.body.classList.contains("dark-theme")) {
@@ -1421,4 +1421,21 @@ document.getElementById("themeToggle").addEventListener("click", function() {
     }
 });	
 
+document.getElementById('themeToggle').addEventListener('click', function() {
+    document.body.classList.toggle('dark-theme');
+});
+*/
+
+	const themeToggle = document.getElementById("themeToggle");
+
+themeToggle.addEventListener("click", function() {
+    if (document.body.dataset.theme === "dark") {
+        document.body.dataset.theme = "light";
+    } else {
+        document.body.dataset.theme = "dark";
+    }
+});
+
+
+	
 });
