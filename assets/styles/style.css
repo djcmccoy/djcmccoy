@@ -4960,48 +4960,41 @@ li:nth-child(4) .menu-list__item span {
 
 /*ADDITIONAL CSS */
 
-/* BACKGROUND */
-
-/* Light Theme - Default */
-body {
-    background-color: #FFFFFF; /* This is an example color. Change to your light theme color. */
-    transition: background-color 0.3s ease;
+/* Default styles and transitions */
+body, nav, .btn-link {
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
 
-/* Dark Theme */
-body.dark-theme {
-    background-color: #110F10; /* This is an example color. Change to your dark theme color. */
+/* Default (light) theme styles */
+body[data-theme="light"] {
+    background-color: #ffffff;
+    color: #000000;
 }
 
-/* LOGO */
-
-/* Initially hide the dark-themed logo */
-.logotype__back.dark-logo {
-    display: none;
+nav[data-theme="light"] {
+    background-color: #e6e6e6; /* Adjust as needed */
 }
 
-/* If the background theme is light, hide the light-themed logo and display the dark-themed one */
-body.light-theme .logotype__front.light-logo {
-    display: none;
+.btn-link[data-theme="light"] {
+    color: #0077cc; /* Adjust as needed */
+    border: 1px solid #0077cc; /* Adjust as needed */
 }
 
-body.light-theme .logotype__back.dark-logo {
-    display: block;
+/* Dark theme styles */
+body[data-theme="dark"] {
+    background-color: #110F10;
+    color: #ffffff;
 }
 
-/* ELEMENTS */
-
-/* Default (Light) Theme styles */
-.title, .description, .btn-link {
-    color: #110F10; /* Dark text for light theme */
+nav[data-theme="dark"] {
+    background-color: #110F10;
 }
 
-/* Dark Theme styles */
-body.dark-theme .title, 
-body.dark-theme .description, 
-body.dark-theme .btn-link {
-    color: #fff; /* White text for dark theme */
+.btn-link[data-theme="dark"] {
+    color: #00ccff; /* Adjust as needed */
+    border: 1px solid #00ccff; /* Adjust as needed */
 }
 
+/* Add any other element-specific theme styles using the [data-theme] attribute */
 
-/*# sourceMappingURL=style.css.map */
+/* sourceMappingURL=style.css.map */
