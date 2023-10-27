@@ -1432,7 +1432,4 @@ themeToggle.addEventListener("click", function() {
         document.body.dataset.theme = "dark";
     }
 });
-
-
-	
 });
