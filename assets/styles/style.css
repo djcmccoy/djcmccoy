@@ -4961,17 +4961,6 @@ li:nth-child(4) .menu-list__item span {
 /*ADDITIONAL CSS */
 /* ... other parts of your existing CSS ... */
 
-body {
-    background-color: #fff; 
-    color: #333; 
-    transition: background-color 0.3s ease, color 0.3s ease; 
-}
-
-body.dark-theme {
-    background-color: #333;
-    color: #fff;
-}
-
 .light-logo {
     display: block;
 }
@@ -4987,4 +4976,26 @@ body.dark-theme .light-logo {
 body.dark-theme .dark-logo {
     display: block;
 }
+
+body {
+    background-color: #fff;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-theme {
+    background-color: #333;
+    color: #fff;
+}
+
+.logo {
+    transition: opacity 0.3s ease;
+}
+
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+
 /*# sourceMappingURL=style.css.map */
