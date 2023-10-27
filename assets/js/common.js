@@ -1409,7 +1409,31 @@ $(document).ready(function() {
         $("#validator-contact").removeClass().addClass(msgClasses).text(msg);
     }
 
-	/* ADDITIONAL JS */
+	/* ADDITIONAL JS*/
+
+	// ... other parts of your JS ...
+
+	document.querySelector(".hamburger").addEventListener("click", function() {
+    // Toggle the theme
+    var isDarkMode = document.body.classList.toggle("dark-theme");
+
+    // Depending on the theme, hide/show the appropriate logo
+    if (isDarkMode) {
+        document.querySelector(".light-logo").classList.add("hidden");
+        document.querySelector(".dark-logo").classList.remove("hidden");
+    } else {
+        document.querySelector(".dark-logo").classList.add("hidden");
+        document.querySelector(".light-logo").classList.remove("hidden");
+    }
+
+    // ... any other logic you have for the hamburger button, like opening a sidebar menu ...
+});
+
+
+	
+// ... other parts of your JS ...
+
+	/* CUTOUT JS 
 
 	document.getElementById("themeToggle").addEventListener("click", function() {
     // ... your existing theme toggle logic ...
@@ -1442,6 +1466,6 @@ $(document).ready(function() {
 
     // ... any other logic you have for the hamburger button, like opening a sidebar menu ...
 });
-
+*/
 	
 });
