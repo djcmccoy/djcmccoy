@@ -1,4 +1,4 @@
-// Check if a theme is saved in localStorage
+// On page load, set the theme from local storage
 if (localStorage.getItem('theme')) {
     document.body.dataset.theme = localStorage.getItem('theme');
 }
