@@ -4959,7 +4959,8 @@ li:nth-child(4) .menu-list__item span {
 }
 
 /*ADDITIONAL CSS */
-/* ... other parts of your existing CSS ... */
+
+/* BACKGROUND */
 
 /* Light Theme - Default */
 body {
@@ -4972,23 +4973,23 @@ body.dark-theme {
     background-color: #110F10; /* This is an example color. Change to your dark theme color. */
 }
 
-/* Display the light logo by default (for the light theme) */
-.logotype.light-logo {
-    display: block;
-}
+/* LOGO */
 
-.logotype.dark-logo {
+/* Initially hide the dark-themed logo */
+.logotype__back.dark-logo {
     display: none;
 }
 
-/* When the dark theme is active, display the dark logo and hide the light one */
-body.dark-theme .logotype.light-logo {
+/* If the background theme is light, hide the light-themed logo and display the dark-themed one */
+body.light-theme .logotype__front.light-logo {
     display: none;
 }
 
-body.dark-theme .logotype.dark-logo {
+body.light-theme .logotype__back.dark-logo {
     display: block;
 }
+
+/* ELEMENTS */
 
 
 /*# sourceMappingURL=style.css.map */
