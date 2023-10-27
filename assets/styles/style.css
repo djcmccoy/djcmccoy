@@ -4958,77 +4958,28 @@ li:nth-child(4) .menu-list__item span {
   height: 25%;
 }
 
-/* ADDITIONAL CSS*/
-
-/* Light Theme */
-body.light {
-    background-color: var(--light-bg);
-    color: var(--light-text);
-}
-
-body.light .light-text,
-body.light h1, body.light h6, body.light p, body.light a, body.light button {
-    color: var(--light-text);
-}
-
-body.light .logo-link img.logotype__back {
-    display: none;
-}
-
-body.light .logo-link img.logotype__front {
-    display: block;
-}
-
-/* Dark Theme */
-body.dark {
-    background-color: var(--dark-bg);
-    color: var(--dark-text);
-}
-
-body.dark .light-text,
-body.dark h1, body.dark h6, body.dark p, body.dark a, body.dark button {
-    color: var(--dark-text);
-}
-
-body.dark .logo-link img.logotype__back {
-    display: block;
-}
-
-body.dark .logo-link img.logotype__front {
-    display: none;
-}
+/*ADDITIONAL CSS */
 
 body {
-    transition: background-color 0.3s ease, color 0.3s ease;
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
+    /* ... other styles ... */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Add transitions for background and text color */
 }
 
-button, .buttonTransition {
-    transition: background-color 0.3s ease, color 0.3s ease;
+body.dark-theme {
+    background-color: #333;
+    color: #fff;
 }
 
 .logo {
     transition: opacity 0.3s ease;
-    display: block;
     opacity: 1;
 }
 
-/* When hiding, instead of using display: none, we'll use opacity */
-.logo.hidden {
+.hidden {
     opacity: 0;
-    pointer-events: none; /* To ensure that the hidden logo isn't clickable or interactive */
+    pointer-events: none;  /* This ensures that the hidden logo is not clickable */
 }
 
-/* Assuming body has a class "dark-theme" when dark theme is active */
-
-body.dark-theme .light-logo {
-    display: none;
-}
-
-body.dark-theme .dark-logo {
-    display: block;
-}
 
 
 
