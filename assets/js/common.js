@@ -1411,16 +1411,14 @@ $(document).ready(function() {
 
 /* ADDITIONAL JS*/
 
-document.getElementById("themeToggle").addEventListener("click", function() {
-    if(document.body.classList.contains("dark-theme")) {
-        document.body.classList.remove("dark-theme");
-        console.log("Switched to light theme");
+document.getElementById('themeToggle').addEventListener('click', function() {
+    let body = document.body;
+    
+    if (body.classList.contains('light-theme')) {
+        body.classList.remove('light-theme');
     } else {
-        document.body.classList.add("dark-theme");
-        console.log("Switched to dark theme");
+        body.classList.add('light-theme');
     }
 });
-
-
 
 });
