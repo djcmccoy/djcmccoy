@@ -14,3 +14,14 @@ document.getElementById('themeToggle').addEventListener('click', function(event)
         icon.textContent = '🌙';
     }
 });
+
+// Toggle theme function
+themeToggle.addEventListener("click", function() {
+    if (document.body.dataset.theme === "dark") {
+        document.body.dataset.theme = "light";
+    } else {
+        document.body.dataset.theme = "dark";
+    }
+    // Save the current theme to local storage
+    localStorage.setItem("theme", document.body.dataset.theme);
+});
