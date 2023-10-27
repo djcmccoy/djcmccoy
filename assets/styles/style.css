@@ -4974,7 +4974,15 @@ a, .btn-link {
 
 /* Theme invert: Elements that should switch their colors based on the theme */
 .theme-invert {
-    transition: color 0.3s ease;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+    color: #ffffff; /* Setting this for light theme to ensure inversion */
+}
+
+/* For clickable elements to override default browser styles */
+.hamburger:focus, .hamburger:active,
+.theme-invert:focus, .theme-invert:active {
+    outline: none;
+    box-shadow: none;
 }
 
 /* Dark Theme Styles */
@@ -4990,11 +4998,7 @@ body[data-theme='dark'] .btn-link {
 
 body[data-theme='dark'] .theme-invert {
     color: #110F10;
-}
-
-/* For elements that should be inverted in the light theme */
-.theme-invert {
-    color: #ffffff;
+    background-color: transparent; /* Assuming no background color for dark theme, adjust if needed */
 }
 
 /* Hamburger styles */
@@ -5005,5 +5009,6 @@ body[data-theme='dark'] .theme-invert {
 body[data-theme='dark'] .hamburger {
     background-color: #ffffff;
 }
+
 
 /* sourceMappingURL=style.css.map */
