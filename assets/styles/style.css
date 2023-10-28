@@ -4979,7 +4979,7 @@ a, .btn-link {
 
 /* Dark Theme Styles */
 body[data-theme='dark'] {
-    background-color: transparent;
+    background-color: #110F10;
     color: #ffffff;
 }
 
@@ -4999,11 +4999,11 @@ body[data-theme='dark'] .theme-invert {
 
 /* Hamburger styles */
 .hamburger__inner {
-    background-color: transparent; /* Default color for light theme */
+    background-color: #110F10; /* Default color for light theme */
 }
 
 body[data-theme='dark'] .hamburger__inner {
-    background-color: transparent; /* Color for dark theme */
+    background-color: #110F10; /* Color for dark theme */
 }
 
 
