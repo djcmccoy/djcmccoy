@@ -4985,6 +4985,20 @@ a, .btn-link {
     box-shadow: none;
 }
 
+/* Hamburger styles */
+.hamburger {
+    transition: background-color 0.3s ease;
+}
+
+.hamburger .hamburger__inner {
+    background-color: #110F10; /* Black lines for light theme */
+    transition: background-color 0.3s ease;
+}
+
+body[data-theme='dark'] .hamburger .hamburger__inner {
+    background-color: #ffffff; /* White lines for dark theme */
+}
+
 /* Dark Theme Styles */
 body[data-theme='dark'] {
     background-color: #110F10;
@@ -5001,14 +5015,6 @@ body[data-theme='dark'] .theme-invert {
     background-color: transparent; /* Assuming no background color for dark theme, adjust if needed */
 }
 
-/* Hamburger styles */
-.hamburger {
-    transition: background-color 0.3s ease;
-}
-
-body[data-theme='dark'] .hamburger {
-    background-color: #ffffff;
-}
 
 
 /* sourceMappingURL=style.css.map */
