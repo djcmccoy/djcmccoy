@@ -4977,28 +4977,6 @@ a, .btn-link {
     transition: color 0.3s ease;
 }
 
-/* For clickable elements to override default browser styles */
-.hamburger:focus, .hamburger:active,
-.theme-invert:focus, .theme-invert:active {
-    outline: none;
-    box-shadow: none;
-}
-
-/* Hamburger styles */
-.hamburger {
-    transition: background-color 0.3s ease;
-    background-color: transparent; /* Removing any background */
-}
-
-.hamburger .hamburger__inner {
-    background-color: #110F10; /* Black lines for light theme */
-    transition: background-color 0.3s ease;
-}
-
-body[data-theme='dark'] .hamburger .hamburger__inner {
-    background-color: #ffffff; /* White lines for dark theme */
-}
-
 /* Dark Theme Styles */
 body[data-theme='dark'] {
     background-color: #110F10;
@@ -5014,7 +4992,27 @@ body[data-theme='dark'] .theme-invert {
     color: #110F10;
 }
 
+/* For elements that should be inverted in the light theme */
+.theme-invert {
+    color: #ffffff;
+}
 
+/* Resetting styles for the hamburger */
+.hamburger, .hamburger:focus, .hamburger:active {
+    background: transparent;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
 
+/* The inner part of the hamburger (the lines) */
+.hamburger__inner {
+    transition: background-color 0.3s ease;
+    background-color: #110F10;  /* default to black lines for light theme */
+}
+
+body[data-theme='dark'] .hamburger__inner {
+    background-color: #ffffff;  /* white lines for dark theme */
+}
 
 /* sourceMappingURL=style.css.map */
