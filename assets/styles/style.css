@@ -1125,22 +1125,22 @@ button:focus {
 }
 @media only screen and (min-width: 580px) {
   .navbar--white {
-    color: #fff;
+    color: transparent;
   }
   .navbar--white .circle {
     color: #110f10;
-    background-color: #fff;
-    box-shadow: 0 0 0 0px #fff;
+    background-color: #transparent;
+    box-shadow: 0 0 0 0px #transparent;
   }
   .navbar--white .circle:hover {
-    box-shadow: 0 0 0 2px #fff;
+    box-shadow: 0 0 0 2px #transparent;
   }
   .navbar--white .btn-link:hover .circle {
-    box-shadow: 0 0 0 2px #fff;
+    box-shadow: 0 0 0 2px #transparent;
   }
   .navbar--white .hamburger__inner::before,
   .navbar--white .hamburger__inner::after {
-    background-color: #fff;
+    background-color: transparent;
   }
   .navbar-v2 .logotype {
     transform: translate3d(0, 0, 0) !important;
