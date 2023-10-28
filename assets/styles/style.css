@@ -1117,7 +1117,7 @@ button:focus {
   }
   .navbar-v2 .hamburger__inner::before,
   .navbar-v2 .hamburger__inner::after {
-    background-color: transparent;
+    /*background-color: transparent; */
   }
   .navbar-v2 . {
     transform: translate3d(0, 0, 0) !important;
@@ -1140,7 +1140,7 @@ button:focus {
   }
   .navbar--white .hamburger__inner::before,
   .navbar--white .hamburger__inner::after {
-    background-color: transparent;
+   /* background-color: transparent; */
   }
   .navbar-v2 .logotype {
     transform: translate3d(0, 0, 0) !important;
