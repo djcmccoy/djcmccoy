@@ -4979,7 +4979,7 @@ a, .btn-link {
 
 /* Dark Theme Styles */
 body[data-theme='dark'] {
-    background-color: #transparent;
+    background-color: transparent;
     color: #ffffff;
 }
 
