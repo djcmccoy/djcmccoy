@@ -4997,22 +4997,14 @@ body[data-theme='dark'] .theme-invert {
     color: #ffffff;
 }
 
-/* Resetting styles for the hamburger */
-.hamburger, .hamburger:focus, .hamburger:active {
-    background: transparent;
-    border: none;
-    outline: none;
-    box-shadow: none;
-}
-
-/* The inner part of the hamburger (the lines) */
+/* Hamburger styles */
 .hamburger__inner {
-    transition: background-color 0.3s ease;
-    background-color: #110F10;  /* default to black lines for light theme */
+    background-color: #110F10; /* Default color for light theme */
 }
 
 body[data-theme='dark'] .hamburger__inner {
-    background-color: #ffffff;  /* white lines for dark theme */
+    background-color: #ffffff; /* Color for dark theme */
 }
+
 
 /* sourceMappingURL=style.css.map */
