@@ -5025,5 +5025,28 @@ body[data-theme='dark'] #darkThemeSVG {
     display: inline;
 }
 
+/* Base styles for Light Theme */
+.navbar {
+    background-color: #ffffff; /* White background for the navbar */
+    color: #110F10; /* Black color for text */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for color changes */
+}
+
+.navbar a, .navbar .theme-invert {
+    color: #110F10; /* Black color for links and other themed elements */
+}
+
+/* Navbar Dark Theme styles */
+body[data-theme='dark'] .navbar {
+    background-color: #110F10; /* Black background for the navbar */
+    color: #ffffff; /* White color for text */
+}
+
+body[data-theme='dark'] .navbar a,
+body[data-theme='dark'] .navbar .theme-invert {
+    color: #ffffff; /* White color for links and other themed elements */
+}
+
+
 
 /* sourceMappingURL=style.css.map */
