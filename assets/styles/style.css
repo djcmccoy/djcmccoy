@@ -5025,4 +5025,16 @@ body[data-theme='dark'] #darkThemeSVG {
     display: inline;
 }
 
+@media (max-width: 768px) {
+  .navbar {
+    /* Your mobile-specific styles for both dark and light themes */
+  }
+  body[data-theme='dark'] .navbar {
+    /* Dark theme styles for mobile */
+  }
+  body[data-theme='light'] .navbar {
+    /* Light theme styles for mobile */
+  }
+}
+
 /* sourceMappingURL=style.css.map */
