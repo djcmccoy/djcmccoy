@@ -4974,7 +4974,7 @@ a, .btn-link {
 
 /* Theme invert: Elements that should switch their colors based on the theme */
 .theme-invert {
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, filter 0.3s ease; /* Added filter for inversion */
 }
 
 /* Dark Theme Styles */
@@ -4990,6 +4990,7 @@ body[data-theme='dark'] .btn-link {
 
 body[data-theme='dark'] .theme-invert {
     color: #110F10;
+    filter: invert(1); /* Invert the colors */
 }
 
 /* Hamburger styles */
