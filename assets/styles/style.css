@@ -5025,7 +5025,7 @@ body[data-theme='dark'] #darkThemeSVG {
     display: inline;
 }
 
-/* Base styles for Light Theme */
+/* Navbar Base styles for Light Theme */
 .navbar {
     background-color: #ffffff; /* White background for the navbar */
     color: #110F10; /* Black color for text */
