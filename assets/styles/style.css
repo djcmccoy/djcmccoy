@@ -5037,15 +5037,15 @@ body[data-theme='dark'] #darkThemeSVG {
   }
 }
 
-/* Base Styles - Light Theme */
-.navbar {
-    background-color: #ffffff; /* Default to light theme - you can adjust this color if needed */
-    transition: background-color 0.3s ease; /* Smooth transition for color changes */
+/* DROPDOWN NAVBAR INVERT */
+.dropdown-nav .navbar {
+    background-color: #110F10; /* Default to light theme */
 }
 
-/* Dark Theme Styles */
-body[data-theme='dark'] .navbar {
-    background-color: #110F10; /* Color for the navbar in dark theme - this matches your body's dark theme color */
+.dropdown-nav body[data-theme='dark'] .navbar {
+    background-color: #ffffff;
 }
+/* DROPDOWN NAVBAR INVERT */
+
 
 /* sourceMappingURL=style.css.map */
