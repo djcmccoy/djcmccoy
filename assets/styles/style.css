@@ -5034,7 +5034,7 @@ body[data-theme='dark'] #darkThemeSVG {
 
 /* When the dark theme is activated on the dropdown-nav page */
 .dropdown-nav body[data-theme='dark'] .navbar {
-    background-color: inherit;
+    background-color: #110F10;
     transition: background-color 0.3s ease;
 }
 /* DROPDOWN NAVBAR INVERT */
