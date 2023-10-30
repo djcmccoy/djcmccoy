@@ -5040,12 +5040,12 @@ body[data-theme='dark'] #darkThemeSVG {
 /* DROPDOWN NAVBAR INVERT */
 /* Default: Dark Theme */
 .dropdown-nav .navbar {
-    background-color: #110F10;
+    background-color: #ffffff; 
 }
 
 /* Light Theme Styles */
 .dropdown-nav body[data-theme='light'] .navbar {
-    background-color: #ffffff;
+    background-color: #110F10;
 }
 
 /* DROPDOWN NAVBAR INVERT */
