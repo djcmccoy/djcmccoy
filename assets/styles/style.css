@@ -5025,29 +5025,16 @@ body[data-theme='dark'] #darkThemeSVG {
     display: inline;
 }
 
-@media (max-width: 768px) {
-  .navbar {
-    /* Your mobile-specific styles for both dark and light themes */
-  }
-  body[data-theme='dark'] .navbar {
-    /* Dark theme styles for mobile */
-  }
-  body[data-theme='light'] .navbar {
-    /* Light theme styles for mobile */
-  }
-}
-
 /* DROPDOWN NAVBAR INVERT */
-/* Default: Dark Theme */
-.dropdown-nav .navbar {
-    background-color: #ffffff; 
+/* Default (Light Theme) Navbar Color */
+.navbar {
+    background-color: inherit;
 }
 
-/* Light Theme Styles */
-.dropdown-nav body[data-theme='light'] .navbar {
-    background-color: #110F10;
+/* Dark Theme Styles */
+body[data-theme='dark'] .navbar {
+    background-color: inherit;
 }
-
 /* DROPDOWN NAVBAR INVERT */
 
 
