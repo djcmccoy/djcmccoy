@@ -5029,11 +5029,13 @@ body[data-theme='dark'] #darkThemeSVG {
 /* Default (Light Theme) Navbar Color */
 .navbar {
     background-color: inherit;
+    transition: background-color 0.3s ease;
 }
 
 /* Dark Theme Styles */
 body[data-theme='dark'] .navbar {
     background-color: inherit;
+    transition: background-color 0.3s ease;
 }
 /* DROPDOWN NAVBAR INVERT */
 
