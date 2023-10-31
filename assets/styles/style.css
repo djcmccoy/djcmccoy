@@ -5026,15 +5026,15 @@ body[data-theme='dark'] #darkThemeSVG {
 }
 
 /* DROPDOWN NAVBAR INVERT 
-/* Default Navbar styling for the dropdown-nav page (Light Theme)
+/* Main Navbar Style */
 .dropdown-nav .navbar {
-    background-color: #ffffff; /* Light background for light theme 
-    transition: background-color 0.3s ease; /* Transition effect for smooth color change
+    background-color: rgba(255, 255, 255, 0.5); /* half-transparent white for light theme */
+    transition: background-color 0.3s ease;
 }
 
-/* When the dark theme is activated on the dropdown-nav page
+/* Dark Theme Styles */
 .dropdown-nav body[data-theme='dark'] .navbar {
-    background-color: #110F10; /* Dark background for dark theme 
+    background-color: rgba(17, 15, 16, 0.5); /* half-transparent dark color for dark theme */
 }
 
 /* DROPDOWN NAVBAR INVERT */
