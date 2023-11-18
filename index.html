@@ -108,10 +108,6 @@
 				        <h6 class="title title--overhead"><span class="down-up"><span>FRAME PERFECT</span></span></h6>
 				        <h1 class="title title--display-1 js-text-wave">CAMERAWORK</h1>
 				        <div class="section-underline"></div>
-				        <!-- Use the video element instead of an image -->
-				        <video controls width="1500" height="2000">
-				            <source src="your-video-file.mp4" type="video/mp4">
-				        </video>
 				        <p class="description"><span class="down-up"><span>A Decade of Experience in Technical Production and Editing with Premiere and After Effects.</span></span></p>
 				        <a class="btn-link btn-link--circle-right theme-invert" href="cam_news_liquid.html"><span class="down-up"><span>SEE VIDEOS<i class="circle circle--right icon-right-open"></i></span></span></a>
 				    </div>
@@ -165,11 +161,17 @@
 					</div>
 			        <!-- /Image 1 -->
 					
-			        <!-- Image 2 -->
-			        <div class="swiper-slide">
-						<div class="cover-slider lazyload overlay--45" data-bg="assets/img/index-img/video-editing.png"><a class="swiper-slide__link" href="cam_news_liquid.html"></a></div>
-					</div>
-			        <!-- /Image 2 -->
+			       <!-- Video 2 -->
+				<div class="swiper-slide">
+				    <div class="cover-slider lazyload overlay--45" style="width: 1500px; height: 2000px;">
+				        <video controls width="100%" height="100%" poster="path/to/poster-image.jpg">
+				            <source src="path/to/video.mp4" type="video/mp4">
+				        </video>
+				        <a class="swiper-slide__link" href="cam_news_liquid.html"></a>
+				    </div>
+				</div>
+				<!-- /Video 2 -->
+
 					
 			        <!-- Image 3 -->
 			        <div class="swiper-slide">
