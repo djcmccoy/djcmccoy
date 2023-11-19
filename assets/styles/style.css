@@ -5047,12 +5047,13 @@ body[data-theme='dark'] #darkThemeSVG {
 
 /* NAVBAR HIDE */
 #navbar {
-    transition: transform 0.3s ease;
+    transition: transform 1s ease;
 }
 
 #navbar.hidden {
     transform: translateY(-100%);
 }
+
 
 
 /* sourceMappingURL=style.css.map */
