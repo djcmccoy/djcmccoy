@@ -1244,6 +1244,8 @@ button:focus {
   height: 50px;
   max-height: 75px;
   transition: transform 0.4s cubic-bezier(0.72, 0.16, 0.345, 0.875);
+  /*ADDED */
+  animation: moveUpDown 1s infinite ease-in-out;
 }
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .logotype {
@@ -5069,6 +5071,15 @@ body[data-theme='dark'] #darkThemeSVG {
 
 #navbar.hidden .theme-invert-logo {
     filter: invert(100%);
+}
+
+@keyframes moveUpDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
 }
 
 
