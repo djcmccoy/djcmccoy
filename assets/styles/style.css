@@ -5036,7 +5036,7 @@ body[data-theme='dark'] #darkThemeSVG {
 /* Dark Theme Styles */
 .dropdown-nav body[data-theme='dark'] .navbar {
     color: #110F10;
-    background-color: rgba(17, 15, 16, 0.5); /* half-transparent dark color for dark theme */
+    background-color: rgba(17, 15, 16, 0.8); /* half-transparent dark color for dark theme */
 }
 
 /* DROPDOWN NAVBAR INVERT */
