@@ -5062,6 +5062,16 @@ body[data-theme='dark'] #darkThemeSVG {
     background: transparent !important;
 }
 
+/* LOGO INVERT */
+.theme-invert-logo {
+    transition: color 0.3s ease, filter 0.3s ease; /* Added filter for inversion */
+}
+
+#navbar.hidden .theme-invert-logo {
+    filter: invert(100%);
+}
+
+
 
 
 /* sourceMappingURL=style.css.map */
