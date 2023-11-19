@@ -12,7 +12,16 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     themeToggle.addEventListener("click", function() {
-        // Add or remove the theme-invert-logo class based on the navbar's visibility
-        themeToggle.classList.toggle("theme-invert-logo", !navbar.classList.contains("hidden"));
+        // Check if the navbar is hidden
+        if (navbar.classList.contains("hidden")) {
+            // Add the theme-invert-logo class if the navbar is hidden
+            themeToggle.classList.add("theme-invert-logo");
+        } else {
+            // Remove the theme-invert-logo class if the navbar is visible
+            themeToggle.classList.remove("theme-invert-logo");
+        }
     });
+
+    // Ensure the theme-invert-logo class is not present initially
+    themeToggle.classList.remove("theme-invert-logo");
 });
