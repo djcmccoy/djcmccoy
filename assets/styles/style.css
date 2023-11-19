@@ -5045,21 +5045,5 @@ body[data-theme='dark'] #darkThemeSVG {
     transition: transform 0.3s ease-out;
 }
 
-/* NAVBAR HIDE */
-.hidden {
-    transform: translateY(-100%);
-}
-
-.top-bar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 5; /* Ensure the top bar is above the navbar */
-    background-color: #fff; /* Adjust as needed */
-
-/* NAVBAR HIDE */
-
-
 
 /* sourceMappingURL=style.css.map */
