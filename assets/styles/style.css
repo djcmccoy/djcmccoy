@@ -5020,10 +5020,12 @@ body[data-theme='dark'] .hamburger__inner::after {
 /* When dark theme is active, hide the Light Theme SVG and show the Dark Theme SVG */
 body[data-theme='dark'] #lightThemeSVG {
     display: none;
+    transition: opacity 0.5s ease; /* Add a transition for opacity */
 }
 
 body[data-theme='dark'] #darkThemeSVG {
     display: inline;
+    transition: opacity 0.5s ease; /* Add a transition for opacity */
 }
 
 /* DROPDOWN NAVBAR INVERT 
