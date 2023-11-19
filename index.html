@@ -64,26 +64,28 @@
     <div class="mr-auto logo-container">
         <a class="logo-link" href="index.html">
             <!-- Dark logo -->
-            <img class="logotype logotype__front dark-logo theme-invert-logo" src="../assets/images/logo.svg" alt="Logo" />
+            <img class="logotype logotype__front dark-logo" src="../assets/images/logo.svg" alt="Dark Logo" />
             <!-- Light logo -->
-            <img class="logotype logotype__back light-logo theme-invert-logo" src="../assets/images/logo_white.svg" alt="Logo" />
+            <img class="logotype logotype__back light-logo" src="../assets/images/logo_white.svg" alt="Light Logo" />
         </a>
-		
     </div>
     <div class="ml-sm-auto">
+        <!-- Hamburger Button -->
+        <button class="hamburger zoom-cursor" type="button">
+            <span class="hamburger__inner"></span>
+        </button>
+
         <!-- Theme Toggle -->
         <button id="themeToggle" style="cursor: pointer; margin-right: 10px; margin-left:20px; background: none; border: none; padding: 0;">
             <!-- Light Theme SVG (Visible by default) -->
-            <img class="theme-invert theme-invert-logo" id="lightThemeSVG" src="assets/images/toggle_moon.svg" alt="Light Theme Icon" width="20">
+            <img class="light-logo" id="lightThemeSVG" src="assets/images/toggle_moon.svg" alt="Light Theme Icon" width="20">
             <!-- Dark Theme SVG (Hidden by default) -->
-            <img class="theme-invert theme-invert-logo" id="darkThemeSVG" src="assets/images/toggle_sun_black.svg" alt="Dark Theme Icon" width="20">
-        </button>
-        <button class="hamburger zoom-cursor" type="button">
-            <span class="hamburger__inner"></span>
+            <img class="dark-logo" id="darkThemeSVG" src="assets/images/toggle_sun_black.svg" alt="Dark Theme Icon" width="20">
         </button>
     </div>
 </nav>
 <!-- /Top -->
+
 	
     <!-- Hero -->
     <header class="hero">
