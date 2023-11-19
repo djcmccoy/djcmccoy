@@ -12,14 +12,8 @@ document.addEventListener("DOMContentLoaded", function() {
             // Toggle the hidden class for the menu
             menu.classList.toggle("hidden");
 
-            // After a short delay, check the navbar visibility and update theme toggle
-            setTimeout(function() {
-                if (navbar.classList.contains("hidden")) {
-                    themeToggle.classList.add("theme-invert-logo");
-                } else {
-                    themeToggle.classList.remove("theme-invert-logo");
-                }
-            }, 100); // Adjust the delay as needed
+            // Remove the theme-invert-logo class to prevent flickering
+            themeToggle.classList.remove("theme-invert-logo");
         }
     });
 
