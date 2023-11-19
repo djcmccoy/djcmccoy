@@ -1061,7 +1061,7 @@ button:focus {
   padding-left: 4.25rem;
   padding-right: 4.25rem;
   position: fixed;
-  top: 0;
+  top: 56;
   transition: all 0.3s cubic-bezier(0.72, 0.16, 0.345, 0.875);
   width: 100%;
   z-index: 1001;
@@ -5049,6 +5049,15 @@ body[data-theme='dark'] #darkThemeSVG {
 .hidden {
     transform: translateY(-100%);
 }
+
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5; /* Ensure the top bar is above the navbar */
+    background-color: #fff; /* Adjust as needed */
+
 /* NAVBAR HIDE */
 
 
