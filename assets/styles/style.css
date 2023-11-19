@@ -1511,9 +1511,12 @@ button:focus {
 }
 .menu-list.has-hovered-link .menu-list__item {
   opacity: .1;
+  transition: opacity 0.5s ease; /* Add a transition for opacity */
+ 
 }
 .menu-list.has-hovered-link .menu-list__item:hover {
   opacity: 1;
+  transition: opacity 0.5s ease; /* Add a transition for opacity */
 }
 .menu-list__item {
   color: #fff;
