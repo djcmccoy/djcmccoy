@@ -5045,5 +5045,17 @@ body[data-theme='dark'] #darkThemeSVG {
     transition: transform 0.3s ease-out;
 }
 
+/* NAVBAR HIDE */
+/* Add this CSS for the initial state of the navbar */
+#navbar {
+    transition: background 0.5s ease;
+}
+
+/* Add this CSS to hide the navbar background when the 'hidden' class is applied */
+#navbar.hidden {
+    background: transparent !important;
+}
+
+
 
 /* sourceMappingURL=style.css.map */
