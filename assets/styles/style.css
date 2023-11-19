@@ -1065,6 +1065,7 @@ button:focus {
   transition: all 0.3s cubic-bezier(0.72, 0.16, 0.345, 0.875);
   width: 100%;
   z-index: 1001;
+ 
 }
 @media only screen and (max-width: 1500px) {
   .navbar {
@@ -5039,6 +5040,17 @@ body[data-theme='dark'] #darkThemeSVG {
 }
 
 /* DROPDOWN NAVBAR INVERT */
+
+.navbar {
+    transition: transform 0.3s ease-out;
+}
+
+/* NAVBAR HIDE */
+.hidden {
+    transform: translateY(-100%);
+}
+/* NAVBAR HIDE */
+
 
 
 /* sourceMappingURL=style.css.map */
