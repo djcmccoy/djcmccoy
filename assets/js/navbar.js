@@ -2,12 +2,15 @@ document.addEventListener("DOMContentLoaded", function() {
     var navbar = document.getElementById("navbar");
     var hamburgerButton = document.querySelector(".hamburger");
     var themeToggle = document.getElementById("themeToggle");
+    var menu = document.querySelector(".menu");
 
     hamburgerButton.addEventListener("click", function(e) {
         // Check if the clicked element is the hamburger button
         if (!e.target.classList.contains("hamburger__inner")) {
             // Toggle the hidden class for the navbar if the click is not on the hamburger__inner
             navbar.classList.toggle("hidden");
+            // Toggle the hidden class for the menu
+            menu.classList.toggle("hidden");
         }
     });
 
