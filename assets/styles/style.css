@@ -5087,13 +5087,4 @@ body[data-theme='dark'] #darkThemeSVG {
 }
 /* LOGO INVERT */
 
-/* Add this to your CSS file */
-#themeToggleSVG,
-#themeToggleSVG.dark-theme {
-    filter: invert(100%);
-}
-
-
-
-
 /* sourceMappingURL=style.css.map */
