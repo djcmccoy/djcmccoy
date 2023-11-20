@@ -5102,11 +5102,5 @@ body[data-theme='dark'] #darkThemeSVG {
 .menu-open #themeToggle {
     opacity: 0;
 }
-
-/* Add the following rule to style the inverted logo when the menu is open in dark theme */
-.dark-theme.menu-open .logotype {
-    filter: invert(100%);
-    transition: filter 1s ease; /* Add this line for the transition effect */
-}
 /* THEME TOGGLE */
 /* sourceMappingURL=style.css.map */
