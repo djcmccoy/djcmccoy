@@ -5072,23 +5072,6 @@ body[data-theme='dark'] #darkThemeSVG {
     filter: invert(100%);
 }
 
-/* LOGO FIX */
-.menu,
-.hamburger,
-.logo-container {
-    position: relative;
-    z-index: 1; /* Set the same z-index for menu, hamburger, and logo */
-}
-
-.menu {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 1; /* Ensure the z-index is the same as the other elements */
-    opacity: 0;
-    animation: fadeUpDown 1s infinite;
-}
-
 .menu.visible {
     opacity: 1;
     animation: none; /* Disable animation when visible */
