@@ -1,33 +1,33 @@
-document.addEventListener("DOMContentLoaded", function() {
-    var navbar = document.getElementById("navbar");
-    var hamburgerButton = document.querySelector(".hamburger");
-    var themeToggle = document.getElementById("themeToggle");
-    var menu = document.querySelector(".menu");
+const body = document.body;
+const themeToggle = document.getElementById('themeToggle');
+const menu = document.querySelector('.menu');
 
-    hamburgerButton.addEventListener("click", function(e) {
-        // Check if the clicked element is the hamburger button
-        if (!e.target.classList.contains("hamburger__inner")) {
-            // Toggle the hidden class for the navbar if the click is not on the hamburger__inner
-            navbar.classList.toggle("hidden");
-            // Toggle the hidden class for the menu
-            menu.classList.toggle("hidden");
+themeToggle.addEventListener('click', function () {
+    let currentTheme = body.dataset.theme;
 
-            // Remove the theme-invert-logo class to prevent flickering
-            themeToggle.classList.remove("theme-invert-logo");
-        }
-    });
-
-    themeToggle.addEventListener("click", function() {
-        // Check if the navbar is hidden
-        if (navbar.classList.contains("hidden")) {
-            // Add the theme-invert-logo class if the navbar is hidden
-            themeToggle.classList.add("theme-invert-logo");
-        } else {
-            // Remove the theme-invert-logo class if the navbar is visible
-            themeToggle.classList.remove("theme-invert-logo");
-        }
-    });
-
-    // Ensure the theme-invert-logo class is not present initially
-    themeToggle.classList.remove("theme-invert-logo");
+    if (currentTheme === 'dark') {
+        body.dataset.theme = 'light';
+        localStorage.setItem('theme', 'light');
+    } else {
+        body.dataset.theme = 'dark';
+        localStorage.setItem('theme', 'dark');
+    }
+    updateLogoClass();
 });
+
+document.querySelector('.hamburger').addEventListener('click', function () {
+    body.classList.toggle('menu-open');
+    updateLogoClass();
+});
+
+function updateLogoClass() {
+    const currentTheme = body.dataset.theme;
+    const isMenuOpen = body.classList.contains('menu-open');
+    const logo = document.querySelector('.logotype');
+
+    if (currentTheme === 'dark' && isMenuOpen) {
+        logo.classList.remove('theme-invert');
+    } else {
+        logo.classList.add('theme-invert');
+    }
+}
