@@ -18,3 +18,8 @@ document.getElementById('themeToggle').addEventListener('click', function () {
 document.querySelector('.hamburger').addEventListener('click', function () {
     document.body.dataset.menuOpen = (document.body.dataset.menuOpen !== 'true').toString();
 });
+
+// Add this event listener to fix the theme switch issue
+document.getElementById('themeToggle').addEventListener('transitionend', function () {
+    document.getElementById('themeToggle').style.pointerEvents = 'auto';
+});
