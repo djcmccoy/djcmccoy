@@ -1,3 +1,8 @@
+// On page load, set the theme from local storage
+if (localStorage.getItem('theme')) {
+    document.body.dataset.theme = localStorage.getItem('theme');
+}
+
 document.getElementById('themeToggle').addEventListener('click', function () {
     let currentTheme = document.body.dataset.theme;
 
