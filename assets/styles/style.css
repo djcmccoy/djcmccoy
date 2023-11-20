@@ -5087,12 +5087,6 @@ body[data-theme='dark'] #darkThemeSVG {
 }
 /* LOGO INVERT */
 
-/* THEME TOGGLE INVERT */
-.theme-invert-logo,
-.theme-invert-logo.dark-theme {
-    filter: invert(100%);
-}
-
 
 
 /* sourceMappingURL=style.css.map */
