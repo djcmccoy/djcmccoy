@@ -5087,4 +5087,20 @@ body[data-theme='dark'] #darkThemeSVG {
 }
 /* LOGO INVERT */
 
+/* THEME TOGGLE */
+#themeToggle {
+    cursor: pointer;
+    margin-right: 10px;
+    margin-left: 20px;
+    background: none;
+    border: none;
+    padding: 0;
+    transition: opacity 1s ease; /* Add this line for the transition effect */
+}
+
+/* Add the following rule to hide the theme toggle when the menu is open */
+.menu-open #themeToggle {
+    opacity: 0;
+}
+/* THEME TOGGLE */
 /* sourceMappingURL=style.css.map */
