@@ -5076,4 +5076,15 @@ body[data-theme='dark'] #darkThemeSVG {
     opacity: 1;
     animation: none; /* Disable animation when visible */
 }
+
+/* LOGO INVERT */
+.theme-invert-logo {
+    filter: invert(100%);
+}
+
+.theme-invert-logo.dark-theme {
+    filter: invert(0%);
+}
+/* LOGO INVERT */
+
 /* sourceMappingURL=style.css.map */
