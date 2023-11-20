@@ -58,21 +58,25 @@
 	</div>
 
     <!-- Top -->
-	<nav class="navbar">
-        <div class="mr-auto logo-container">
-            <a class="logo-link" href="../index.html">
-                <img class="logotype logotype__front" src="../assets/images/logo.svg" alt="ARTEM.">
-				<img class="logotype logotype__back" src="../assets/images/logo_white.svg" alt="ARTEM.">
-			</a>
-        </div>
-		<div class="ml-sm-auto">
-			<button class="hamburger zoom-cursor" type="button">
-                <span class="hamburger__inner"></span>
-            </button>
+	<nav class="navbar" id="navbar">
+	    <div class="mr-auto logo-container">
+	        <a class="logo-link" href="index.html">
+	            <!-- Single logo SVG with dynamic color -->
+	            <img class="logotype theme-invert" src="assets/images/logo.svg" alt="Logo" />
+	        </a>
+	    </div>
+	    <div class="ml-sm-auto">
+	        <!-- Theme Toggle -->
+	        <button id="themeToggle" style="cursor: pointer; margin-right: 10px; margin-left:20px; background: none; border: none; padding: 0;">
+	            <!-- Theme Toggle SVG (Visible by default) -->
+	            <img class="theme-invert theme-invert-logo" src="assets/images/toggle_moon.svg" alt="Theme Toggle Icon" width="25">
+	        </button>
+	        <button class="hamburger zoom-cursor" type="button">
+	            <span class="hamburger__inner"></span>
+	        </button>
 	    </div>
 	</nav>
 	<!-- /Top -->
-
     <!-- News -->
 	<div class="flex-conteiner-fluid mw">
 		<header class="header-page">
