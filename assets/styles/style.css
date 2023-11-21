@@ -5035,7 +5035,7 @@ body[data-theme='dark'] #darkThemeSVG {
     transition: opacity 0.5s ease; /* Add a transition for opacity */
 }
 
-/* DROPDOWN NAVBAR INVERT 
+/* DROPDOWN NAVBAR INVERT  */
 /* Main Navbar Style */
 .dropdown-nav .navbar {
     background-color: rgba(255, 255, 255, 0.5); /* half-transparent white for light theme */
@@ -5063,6 +5063,17 @@ body[data-theme='dark'] #darkThemeSVG {
     background: transparent !important;
 }
 
+/* THEME TOGGLE */
+#themeToggle {
+    cursor: pointer;
+    margin-right: 10px;
+    margin-left: 20px;
+    background: none;
+    border: none;
+    padding: 0;
+    transition: opacity 1s ease; /* Add this line for the transition effect
+/* THEME TOGGLE */
+ 
 /* LOGO INVERT 
 .theme-invert-logo {
     transition: color 0.3s ease, filter 0.3s ease; /* Added filter for inversion 
@@ -5087,15 +5098,6 @@ body[data-theme='dark'] #darkThemeSVG {
 }
 /* LOGO INVERT */
 
-/* THEME TOGGLE 
-#themeToggle {
-    cursor: pointer;
-    margin-right: 10px;
-    margin-left: 20px;
-    background: none;
-    border: none;
-    padding: 0;
-    transition: opacity 1s ease; /* Add this line for the transition effect
 }
 
 /* Add the following rule to hide the theme toggle when the menu is open 
