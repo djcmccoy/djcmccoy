@@ -5061,7 +5061,7 @@ body[data-theme='dark'] .hamburger__inner::after {
 /* Main Navbar Style */
 .dropdown-nav .navbar {
     background-color: rgba(255, 255, 255, 0.5); /* half-transparent white for light theme */
-    transition: background-color 0.3s ease;
+
 }
 
 /* Dark Theme Styles */
