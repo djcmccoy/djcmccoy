@@ -5038,4 +5038,13 @@ body[data-theme='dark'] #darkThemeSVG {
     background-color: rgba(17, 15, 16, 0.5); /* half-transparent dark color for dark theme */
 }
 /* DROPDOWN NAVBAR INVERT */
+
+/* Theme Toggle and Logo Fade on Menu Open */
+.menu-open #themeToggle,
+.menu-open .logo-link img {
+    opacity: 0; /* Fades to 0 opacity */
+    transition: opacity 0.3s ease; /* Add a smooth transition effect */
+}
+/* Theme Toggle and Logo Fade on Menu Open */
+
 /* sourceMappingURL=style.css.map */
