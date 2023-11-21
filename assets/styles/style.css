@@ -5059,15 +5059,18 @@ body[data-theme='dark'] .hamburger__inner::after {
 
 /* DROPDOWN NAVBAR INVERT */
 /* Main Navbar Style */
-.dropdown-nav .navbar {
-    background-color: rgba(255, 255, 255, 0.5); /* half-transparent white for light theme */
-
+.navbar {
+    background-color: rgba(255, 255, 255, .5); /* Fully opaque white */
+    transition: background-color 0.3s ease;
 }
 
-/* Dark Theme Styles */
+/* Dark Theme Styles for Dropdown Navbar */
 .dropdown-nav body[data-theme='dark'] .navbar {
     color: #110F10;
-    background-color: rgba(17, 15, 16, 0.5); /* half-transparent dark color for dark theme */
+    background-color: rgba(17, 15, 16, 0..5); /* Adjust transparency for dark theme */
+    transition: background-color 0.3s ease;
 }
+
+/* DROPDOWN NAVBAR INVERT */
 
 /* sourceMappingURL=style.css.map */
