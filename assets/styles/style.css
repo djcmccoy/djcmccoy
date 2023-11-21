@@ -4966,7 +4966,8 @@ li:nth-child(4) .menu-list__item span {
   height: 25%;
 }
 
-/* ADDITIONAL CSS */
+/* ADDITIONAL CSS
+=============================*/
 
 /* Base Styles */
 body {
@@ -4980,81 +4981,45 @@ a, .btn-link {
     color: #110F10;
 }
 
-/* Theme invert: Elements that should switch their colors based on the theme */
-.theme-invert {
-    transition: color 0.3s ease, filter 0.3s ease; /* Added filter for inversion */
-}
-
-/* Dark Theme Styles */
+/* Theme Styles */
 body[data-theme='dark'] {
     background-color: #110F10;
     color: #ffffff;
 }
 
-body[data-theme='dark'] a,
-body[data-theme='dark'] .btn-link {
-    color: #ffffff;
+/* Theme Invert Styles */
+.theme-invert {
+    transition: color 0.3s ease, filter 0.3s ease;
 }
 
 body[data-theme='dark'] .theme-invert {
     color: #110F10;
-    filter: invert(1); /* Invert the colors */
+    filter: invert(1);
 }
 
-/* Hamburger styles */
+/* Hamburger Styles */
 .hamburger {
-    background-color: transparent; /* Ensure transparent background */
-    border: none; /* Remove any borders */
+    background-color: transparent;
+    border: none;
     transition: background-color 0.3s ease;
 }
 
 .hamburger__inner::before,
 .hamburger__inner::after {
-    background-color: #110F10; /* Default color for the lines in light theme */
-    transition: background-color 0.3s ease; /* Smooth transition for color changes */
+    background-color: #110F10;
+    transition: background-color 0.3s ease;
 }
 
 body[data-theme='dark'] .hamburger__inner::before,
 body[data-theme='dark'] .hamburger__inner::after {
-    background-color: #ffffff; /* Color for the lines in dark theme */
+    background-color: #ffffff;
 }
 
-/* Hide the Dark Theme SVG by default */
-#darkThemeSVG {
-    display: none;
-}
-
-/* When dark theme is active, hide the Light Theme SVG and show the Dark Theme SVG */
-body[data-theme='dark'] #lightThemeSVG {
-    display: none;
-    transition: opacity 0.5s ease; /* Add a transition for opacity */
-}
-
-body[data-theme='dark'] #darkThemeSVG {
-    display: inline;
-    transition: opacity 0.5s ease; /* Add a transition for opacity */
-}
-
-/* DROPDOWN NAVBAR INVERT 
-/* Main Navbar Style */
-.navbar {
-    background-color: rgba(255, 255, 255, 0.75); /* 75% transparent white */
-    transition: background-color 0.3s ease;
-}
-
-/* Dark Theme Styles for Dropdown Navbar */
-.dropdown-nav body[data-theme='dark'] .navbar {
-    color: #110F10;
-    background-color: rgba(17, 15, 16, 0.75); /* Adjust transparency for dark theme if needed */
-}
-
-/* DROPDOWN NAVBAR INVERT */
-
+/* Navbar Styles */
 .navbar {
     transition: transform 0.3s ease-out;
 }
 
-/* NAVBAR HIDE */
 #navbar {
     transition: background 1s ease;
 }
@@ -5063,9 +5028,24 @@ body[data-theme='dark'] #darkThemeSVG {
     background: transparent !important;
 }
 
-/* LOGO INVERT */
+/* Theme Toggle Styles */
+#themeToggle {
+    cursor: pointer;
+    margin-right: 10px;
+    margin-left: 20px;
+    background: none;
+    border: none;
+    padding: 0;
+    transition: opacity 1s ease;
+}
+
+.menu-open #themeToggle {
+    opacity: 0;
+}
+
+/* Logo Invert Styles */
 .theme-invert-logo {
-    transition: color 0.3s ease, filter 0.3s ease; /* Added filter for inversion */
+    transition: color 0.3s ease, filter 0.3s ease;
 }
 
 #navbar.hidden .theme-invert-logo {
@@ -5074,35 +5054,7 @@ body[data-theme='dark'] #darkThemeSVG {
 
 .menu.visible {
     opacity: 1;
-    animation: none; /* Disable animation when visible */
-}
-
-/* LOGO INVERT */
-.theme-invert-logo {
-    filter: invert(100%);
-}
-
-.theme-invert-logo.dark-theme {
-    filter: invert(0%);
-}
-/* LOGO INVERT */
-
-/* THEME TOGGLE */
-#themeToggle {
-    cursor: pointer;
-    margin-right: 10px;
-    margin-left: 20px;
-    background: none;
-    border: none;
-    padding: 0;
-    transition: opacity 1s ease; /* Add this line for the transition effect */
-}
-
-/* Add the following rule to hide the theme toggle when the menu is open */
-.menu-open #themeToggle {
-    opacity: 0;
-}
-/* THEME TOGGLE */
-/* sourceMappingURL=style.css.map */
+    animation: none;
+}MappingURL=style.css.map */
 
 /* sourceMappingURL=style.css.map */
