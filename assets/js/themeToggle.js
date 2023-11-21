@@ -3,9 +3,7 @@ if (localStorage.getItem('theme')) {
     document.body.dataset.theme = localStorage.getItem('theme');
 }
 
-const themeToggle = document.getElementById('themeToggle');
-
-themeToggle.addEventListener('click', function () {
+document.getElementById('themeToggle').addEventListener('click', function() {
     let currentTheme = document.body.dataset.theme;
 
     if (currentTheme === 'dark') {
@@ -15,10 +13,4 @@ themeToggle.addEventListener('click', function () {
         document.body.dataset.theme = 'dark';
         localStorage.setItem('theme', 'dark');
     }
-
-    // Add this section for smooth transition
-    themeToggle.style.pointerEvents = 'none';
-    setTimeout(() => {
-        themeToggle.style.pointerEvents = 'auto';
-    }, 1000); // Adjust the delay as needed
 });
