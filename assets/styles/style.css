@@ -1061,11 +1061,10 @@ button:focus {
   padding-left: 4.25rem;
   padding-right: 4.25rem;
   position: fixed;
-  top: 56;
+  top: 0;
   transition: all 0.3s cubic-bezier(0.72, 0.16, 0.345, 0.875);
   width: 100%;
   z-index: 1001;
- 
 }
 @media only screen and (max-width: 1500px) {
   .navbar {
@@ -1244,7 +1243,6 @@ button:focus {
   height: 50px;
   max-height: 75px;
   transition: transform 0.4s cubic-bezier(0.72, 0.16, 0.345, 0.875);
- 
 }
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .logotype {
@@ -1433,7 +1431,6 @@ button:focus {
 .menu.menu-show .menu-list__item span {
   opacity: 1;
   transform: translate3d(0, 0%, 0);
-  transition: opacity 0.5s ease; /* Add a transition for opacity */
 }
 .menu.menu-show .social {
   opacity: 1;
@@ -1513,12 +1510,9 @@ button:focus {
 }
 .menu-list.has-hovered-link .menu-list__item {
   opacity: .1;
-  transition: opacity 0.5s ease; /* Add a transition for opacity */
- 
 }
 .menu-list.has-hovered-link .menu-list__item:hover {
   opacity: 1;
-  transition: opacity 0.5s ease; /* Add a transition for opacity */
 }
 .menu-list__item {
   color: #fff;
@@ -1529,7 +1523,6 @@ button:focus {
   overflow: hidden;
   position: relative;
   text-decoration: none;
-  transition: opacity 0.5s ease; /* Add a transition for opacity */
 }
 @media only screen and (max-width: 1500px) {
   .menu-list__item {
@@ -1554,7 +1547,6 @@ button:focus {
 }
 .menu-list__item:hover {
   color: #fff;
-  transition: opacity 0.5s ease; /* Add a transition for opacity */
 }
 @media only screen and (max-width: 580px) {
   .menu-list__item:hover {
@@ -4966,8 +4958,7 @@ li:nth-child(4) .menu-list__item span {
   height: 25%;
 }
 
-/* ADDITIONAL CSS
-=============================*/
+/*ADDITIONAL CSS */
 
 /* Base Styles */
 body {
@@ -4981,95 +4972,70 @@ a, .btn-link {
     color: #110F10;
 }
 
-/* Theme Styles */
+/* Theme invert: Elements that should switch their colors based on the theme */
+.theme-invert {
+    transition: color 0.3s ease, filter 0.3s ease; /* Added filter for inversion */
+}
+
+/* Dark Theme Styles */
 body[data-theme='dark'] {
     background-color: #110F10;
     color: #ffffff;
 }
 
-/* Theme Invert Styles */
-.theme-invert {
-    transition: color 0.3s ease, filter 0.3s ease;
+body[data-theme='dark'] a,
+body[data-theme='dark'] .btn-link {
+    color: #ffffff;
 }
 
 body[data-theme='dark'] .theme-invert {
     color: #110F10;
-    filter: invert(1);
+    filter: invert(1); /* Invert the colors */
 }
 
-/* Hamburger Styles */
+/* Hamburger styles */
 .hamburger {
-    background-color: transparent;
-    border: none;
+    background-color: transparent; /* Ensure transparent background */
+    border: none; /* Remove any borders */
     transition: background-color 0.3s ease;
 }
 
 .hamburger__inner::before,
 .hamburger__inner::after {
-    background-color: #110F10;
-    transition: background-color 0.3s ease;
+    background-color: #110F10; /* Default color for the lines in light theme */
+    transition: background-color 0.3s ease; /* Smooth transition for color changes */
 }
 
 body[data-theme='dark'] .hamburger__inner::before,
 body[data-theme='dark'] .hamburger__inner::after {
-    background-color: #ffffff;
+    background-color: #ffffff; /* Color for the lines in dark theme */
 }
 
-/* Navbar Styles */
-.navbar {
-    transition: transform 0.3s ease-out;
+/* Hide the Dark Theme SVG by default */
+#darkThemeSVG {
+    display: none;
 }
 
-#navbar {
-    transition: background 1s ease;
+/* When dark theme is active, hide the Light Theme SVG and show the Dark Theme SVG */
+body[data-theme='dark'] #lightThemeSVG {
+    display: none;
 }
 
-#navbar.hidden {
-    background: transparent !important;
+body[data-theme='dark'] #darkThemeSVG {
+    display: inline;
 }
 
-/* Theme Toggle Styles */
-#themeToggle {
-    cursor: pointer;
-    margin-right: 10px;
-    margin-left: 20px;
-    background: none;
-    border: none;
-    padding: 0;
-    transition: opacity 1s ease;
-}
-
-.menu-open #themeToggle {
-    opacity: 0;
-}
-
-/* Logo Invert Styles */
-.theme-invert-logo {
-    transition: color 0.3s ease, filter 0.3s ease;
-}
-
-#navbar.hidden .theme-invert-logo {
-    filter: invert(100%);
-}
-
-.menu.visible {
-    opacity: 1;
-    animation: none;
-}MappingURL=style.css.map */
-
-/* DROPDOWN NAVBAR INVERT */
+/* DROPDOWN NAVBAR INVERT 
 /* Main Navbar Style */
-.navbar {
-    background-color: rgba(255, 255, 255, 0.5); /* Fully opaque white */
+.dropdown-nav .navbar {
+    background-color: rgba(255, 255, 255, 0.5); /* half-transparent white for light theme */
     transition: background-color 0.3s ease;
 }
 
-/* Dark Theme Styles for Dropdown Navbar */
+/* Dark Theme Styles */
 .dropdown-nav body[data-theme='dark'] .navbar {
     color: #110F10;
-    background-color: rgba(0, 0, 0, 0.5); /* Adjust transparency for dark theme 17, 16, 15 */
+    background-color: rgba(17, 15, 16, 0.5); /* half-transparent dark color for dark theme */
 }
-
 /* DROPDOWN NAVBAR INVERT */
-
 /* sourceMappingURL=style.css.map */
