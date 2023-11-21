@@ -5057,4 +5057,17 @@ body[data-theme='dark'] .hamburger__inner::after {
     animation: none;
 }MappingURL=style.css.map */
 
+/* DROPDOWN NAVBAR INVERT */
+/* Main Navbar Style */
+.dropdown-nav .navbar {
+    background-color: rgba(255, 255, 255, 0.5); /* half-transparent white for light theme */
+    transition: background-color 0.3s ease;
+}
+
+/* Dark Theme Styles */
+.dropdown-nav body[data-theme='dark'] .navbar {
+    color: #110F10;
+    background-color: rgba(17, 15, 16, 0.5); /* half-transparent dark color for dark theme */
+}
+
 /* sourceMappingURL=style.css.map */
