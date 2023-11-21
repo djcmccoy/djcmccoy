@@ -5063,9 +5063,9 @@ body[data-theme='dark'] #darkThemeSVG {
     background: transparent !important;
 }
 
-/* LOGO INVERT */
+/* LOGO INVERT 
 .theme-invert-logo {
-    transition: color 0.3s ease, filter 0.3s ease; /* Added filter for inversion */
+    transition: color 0.3s ease, filter 0.3s ease; /* Added filter for inversion 
 }
 
 #navbar.hidden .theme-invert-logo {
@@ -5077,7 +5077,7 @@ body[data-theme='dark'] #darkThemeSVG {
     animation: none; /* Disable animation when visible */
 }
 
-/* LOGO INVERT */
+/* LOGO INVERT 
 .theme-invert-logo {
     filter: invert(100%);
 }
