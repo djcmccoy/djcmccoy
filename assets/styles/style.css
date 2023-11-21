@@ -5073,14 +5073,32 @@ body[data-theme='dark'] #darkThemeSVG {
     padding: 0;
     transition: opacity 1s ease; /* Add this line for the transition effect
 /* THEME TOGGLE */
- 
-/* LOGO INVERT 
+
+ /* LOGO INVERT */
 .theme-invert-logo {
+    filter: invert(100%);
+    transition: color 0.3s ease, filter 0.3s ease; /* Added filter for inversion */
+}
+
+.theme-invert-logo.dark-theme {
+    filter: invert(0%);
     transition: color 0.3s ease, filter 0.3s ease; /* Added filter for inversion 
 }
+/* LOGO INVERT */
 
 #navbar.hidden .theme-invert-logo {
     filter: invert(100%);
+    /* LOGO INVERT */
+.theme-invert-logo {
+    filter: invert(100%);
+    transition: color 0.3s ease, filter 0.3s ease; /* Added filter for inversion */
+}
+
+.theme-invert-logo.dark-theme {
+    filter: invert(0%);
+    transition: color 0.3s ease, filter 0.3s ease; /* Added filter for inversion 
+}
+/* LOGO INVERT */
 }
 
 .menu.visible {
@@ -5088,15 +5106,7 @@ body[data-theme='dark'] #darkThemeSVG {
     animation: none; /* Disable animation when visible */
 }
 
-/* LOGO INVERT 
-.theme-invert-logo {
-    filter: invert(100%);
-}
 
-.theme-invert-logo.dark-theme {
-    filter: invert(0%);
-}
-/* LOGO INVERT */
 
 }
 
@@ -5104,5 +5114,5 @@ body[data-theme='dark'] #darkThemeSVG {
 .menu-open #themeToggle {
     opacity: 0;
 }
-/* THEME TOGGLE */
+ 
 /* sourceMappingURL=style.css.map */
