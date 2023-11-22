@@ -5040,16 +5040,17 @@ body[data-theme='dark'] #darkThemeSVG {
 /* DROPDOWN NAVBAR INVERT */
 
 /* Theme Toggle, Logo, and Dropdown Navbar Fade on Menu Open */
-.menu-open #themeToggle,
-.menu-open .logo-link img,
-.menu-open .dropdown-nav .navbar {
-    opacity: 0; /* Fades to 0 opacity */
+#themeToggle,
+.logo-link img,
+.dropdown-nav .navbar {
+    opacity: 1; /* Initial opacity */
     transition: opacity 0.3s ease; /* Add a smooth transition effect */
 }
 
-/* Ensure that the fading effect is applied when the dropdown is expanded */
-.dropdown-nav.menu-open .navbar {
-    opacity: 0;
+.menu-open #themeToggle,
+.menu-open .logo-link img,
+.menu-open .dropdown-nav .navbar {
+    opacity: 0; /* Fades to 0 opacity when the menu is open */
 }
 /* Theme Toggle, Logo, and Dropdown Navbar Fade on Menu Open */
 
