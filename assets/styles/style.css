@@ -5047,8 +5047,10 @@ body.dropdown-nav.menu-open #navbar {
     transition: opacity 0.5s ease; /* Transition with a duration of 0.5 seconds */
 }
 
-/* Fade-out effect for Navbar, Logo, and Theme Toggle */
-.navbar.fade-out, .navbar .logo-link.fade-out, .navbar #themeToggle.fade-out {
+/* Fade-out effect for elements inside Dropdown-Nav */
+.dropdown-nav.fade-out, 
+.dropdown-nav .logo-link.fade-out, 
+.dropdown-nav #themeToggle.fade-out {
     opacity: 0; /* Fully transparent */
     transition: opacity 0.5s ease;
 }
