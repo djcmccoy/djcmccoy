@@ -5038,20 +5038,11 @@ body[data-theme='dark'] #darkThemeSVG {
     background-color: rgba(17, 15, 16, 0.5);
 }
 
-/* Theme Toggle, Logo, and Dropdown Navbar Fade on Menu Open */
-#themeToggle,
-.logo-link img,
-.dropdown-nav .navbar {
-    opacity: 1;
-    transition: opacity 0.3s ease;
+/* Fade background of dropdown-nav to 0 when menu is open */
+body.dropdown-nav.menu-open .navbar {
+    background-color: rgba(255, 255, 255, 0); /* Fully transparent background */
+    transition: background-color 0.5s ease; /* Transition with a duration of 0.5 seconds */
 }
-
-.menu-open #themeToggle,
-.menu-open .logo-link img,
-.menu-open .dropdown-nav .navbar {
-    opacity: 0;
-}
-/* Theme Toggle, Logo, and Dropdown Navbar Fade on Menu Open */
 
 /*==============================================
 ADDITIONAL CSS 
