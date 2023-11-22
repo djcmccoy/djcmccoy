@@ -5046,6 +5046,11 @@ body[data-theme='dark'] #darkThemeSVG {
     opacity: 0; /* Fades to 0 opacity */
     transition: opacity 0.3s ease; /* Add a smooth transition effect */
 }
+
+/* Ensure that the fading effect is applied when the dropdown is expanded */
+.dropdown-nav.menu-open .navbar {
+    opacity: 0;
+}
 /* Theme Toggle, Logo, and Dropdown Navbar Fade on Menu Open */
 
 /* sourceMappingURL=style.css.map */
