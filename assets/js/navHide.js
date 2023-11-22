@@ -1,16 +1,13 @@
 document.addEventListener("DOMContentLoaded", function() {
     var navbar = document.getElementById("navbar");
-    var hamburgerButton = document.getElementById("hamburgerButton");
+    var logo = navbar.querySelector(".logo-link"); // Reference to the logo
     var themeToggle = document.getElementById("themeToggle");
+    var hamburgerButton = document.getElementById("hamburgerButton");
 
     hamburgerButton.addEventListener("click", function() {
-        if (navbar.style.opacity === "0") {
-            navbar.style.opacity = "1"; // Show the navbar
-        } else {
-            navbar.style.opacity = "0"; // Hide (fade out) the navbar
-        }
-
-        // Optional: Adjust the theme-invert class toggle as needed
-        themeToggle.classList.toggle("theme-invert", navbar.style.opacity !== "0");
+        // Toggle 'fade' class for navbar, logo, and theme toggle
+        navbar.classList.toggle("fade");
+        logo.classList.toggle("fade");
+        themeToggle.classList.toggle("fade");
     });
 });
