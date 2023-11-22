@@ -5,9 +5,9 @@ document.addEventListener("DOMContentLoaded", function() {
     var hamburgerButton = document.getElementById("hamburgerButton");
 
     hamburgerButton.addEventListener("click", function() {
-        // Toggle 'fade' class for navbar, logo, and theme toggle
-        navbar.classList.toggle("fade");
-        logo.classList.toggle("fade");
-        themeToggle.classList.toggle("fade");
+        // Toggle 'fade-out' class for navbar, logo, and theme toggle
+        navbar.classList.toggle("fade-out");
+        logo.classList.toggle("fade-out");
+        themeToggle.classList.toggle("fade-out");
     });
 });
