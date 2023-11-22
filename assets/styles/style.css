@@ -5040,8 +5040,9 @@ body[data-theme='dark'] #darkThemeSVG {
 
 /* Fade background of dropdown-nav to 0 when menu is open */
 body.dropdown-nav.menu-open .navbar {
-    background-color: rgba(255, 255, 255, 0); /* Fully transparent background */
-    transition: background-color 0.5s ease; /* Transition with a duration of 0.5 seconds */
+    opacity: 0; /* Fades to 0 opacity when the menu is open */
+    pointer-events: none; /* Disable pointer events to make elements beneath clickable */
+    transition: opacity 0.5s ease; /* Transition with a duration of 0.5 seconds */
 }
 
 /*==============================================
