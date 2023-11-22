@@ -5028,31 +5028,22 @@ body[data-theme='dark'] #darkThemeSVG {
     display: inline;
 }
 
-/* DROPDOWN NAVBAR INVERT */
+/* Dropdown Navbar Styles */
 .dropdown-nav .navbar {
     background-color: rgba(255, 255, 255, 0.5);
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, opacity 0.5s ease;
 }
 
-/* Dark Theme Styles for Dropdown Navbar */
 .dropdown-nav body[data-theme='dark'] .navbar {
     color: #110F10;
     background-color: rgba(17, 15, 16, 0.5);
 }
 
-/* Fade background of dropdown-nav to 0 when menu is open */
-body.dropdown-nav.menu-open #navbar {
-    opacity: 0; /* Fades to 0 opacity when the menu is open */
-    pointer-events: none; /* Disable pointer events to make elements beneath clickable */
-    transition: opacity 0.5s ease; /* Transition with a duration of 0.5 seconds */
-}
-
-/* Fade-out effect for elements inside Dropdown-Nav */
-.dropdown-nav.fade-out, 
-.dropdown-nav .logo-link.fade-out, 
-.dropdown-nav #themeToggle.fade-out {
+/* Fading Effects */
+.dropdown-nav.fade-out .logo-link, 
+.dropdown-nav.fade-out #themeToggle,
+.dropdown-nav.background-fade-out {
     opacity: 0; /* Fully transparent */
-    transition: opacity 0.5s ease;
 }
 
 /*==============================================
