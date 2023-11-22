@@ -1,14 +1,16 @@
 document.addEventListener("DOMContentLoaded", function() {
     var navbar = document.getElementById("navbar");
-    var menu = document.getElementById("menu"); // Assuming you have a menu element
-    var hamburgerButton = document.querySelector(".hamburger");
+    var hamburgerButton = document.getElementById("hamburgerButton");
     var themeToggle = document.getElementById("themeToggle");
 
     hamburgerButton.addEventListener("click", function() {
-        navbar.classList.toggle("hidden");
-        menu.classList.toggle("active"); // Toggle the visibility or position of the menu
+        if (navbar.style.opacity === "0") {
+            navbar.style.opacity = "1"; // Show the navbar
+        } else {
+            navbar.style.opacity = "0"; // Hide (fade out) the navbar
+        }
 
-        // Add or remove the theme-invert class based on the navbar's visibility
-        themeToggle.classList.toggle("theme-invert", !navbar.classList.contains("hidden"));
+        // Optional: Adjust the theme-invert class toggle as needed
+        themeToggle.classList.toggle("theme-invert", navbar.style.opacity !== "0");
     });
 });
