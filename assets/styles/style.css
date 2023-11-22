@@ -4963,7 +4963,7 @@ li:nth-child(4) .menu-list__item span {
 /* Base Styles */
 body {
     transition: background-color 0.3s ease, color 0.3s ease;
-    background-color: #ffffff; /* default to light theme */
+    background-color: #ffffff;
     color: #110F10;
 }
 
@@ -4972,9 +4972,8 @@ a, .btn-link {
     color: #110F10;
 }
 
-/* Theme invert: Elements that should switch their colors based on the theme */
 .theme-invert {
-    transition: color 0.3s ease, filter 0.3s ease; /* Added filter for inversion */
+    transition: color 0.3s ease, filter 0.3s ease;
 }
 
 /* Dark Theme Styles */
@@ -4990,68 +4989,38 @@ body[data-theme='dark'] .btn-link {
 
 body[data-theme='dark'] .theme-invert {
     color: #110F10;
-    filter: invert(1); /* Invert the colors */
+    filter: invert(1);
 }
 
 /* Hamburger styles */
 .hamburger {
-    background-color: transparent; /* Ensure transparent background */
-    border: none; /* Remove any borders */
+    background-color: transparent;
+    border: none;
     transition: background-color 0.3s ease;
 }
 
 .hamburger__inner::before,
 .hamburger__inner::after {
-    background-color: #110F10; /* Default color for the lines in light theme */
-    transition: background-color 0.3s ease; /* Smooth transition for color changes */
+    background-color: #110F10;
+    transition: background-color 0.3s ease;
 }
 
 body[data-theme='dark'] .hamburger__inner::before,
 body[data-theme='dark'] .hamburger__inner::after {
-    background-color: #ffffff; /* Color for the lines in dark theme */
+    background-color: #ffffff;
 }
-
-/* Hide the Dark Theme SVG by default */
-#darkThemeSVG {
-    display: none;
-}
-
-/* When dark theme is active, hide the Light Theme SVG and show the Dark Theme SVG */
-body[data-theme='dark'] #lightThemeSVG {
-    display: none;
-}
-
-body[data-theme='dark'] #darkThemeSVG {
-    display: inline;
-}
-
-/* DROPDOWN NAVBAR INVERT 
-/* Main Navbar Style */
-.dropdown-nav .navbar {
-    background-color: rgba(255, 255, 255, 0.5); /* half-transparent white for light theme */
-    transition: background-color 0.3s ease;
-}
-
-/* Dark Theme Styles */
-.dropdown-nav body[data-theme='dark'] .navbar {
-    color: #110F10;
-    background-color: rgba(17, 15, 16, 0.5); /* half-transparent dark color for dark theme */
-}
-/* DROPDOWN NAVBAR INVERT */
 
 /* Theme Toggle, Logo, and Dropdown Navbar Fade on Menu Open */
 #themeToggle,
 .logo-link img,
 .dropdown-nav .navbar {
-    opacity: 1; /* Initial opacity */
-    transition: opacity 0.3s ease; /* Add a smooth transition effect */
+    opacity: 1;
+    transition: opacity 0.3s ease;
 }
 
 .menu-open #themeToggle,
 .menu-open .logo-link img,
 .menu-open .dropdown-nav .navbar {
-    opacity: 0; /* Fades to 0 opacity when the menu is open */
+    opacity: 0;
 }
-/* Theme Toggle, Logo, and Dropdown Navbar Fade on Menu Open */
-
 /* sourceMappingURL=style.css.map */
