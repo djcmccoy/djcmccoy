@@ -5047,6 +5047,12 @@ body.dropdown-nav.menu-open #navbar {
     transition: opacity 0.5s ease; /* Transition with a duration of 0.5 seconds */
 }
 
+/* Fade effect for Navbar, Logo, and Theme Toggle */
+.navbar.fade, .navbar .logo-link, .navbar #themeToggle {
+    opacity: 0.5; /* Adjust the opacity as needed */
+    transition: opacity 0.5s ease;
+}
+
 /*==============================================
 ADDITIONAL CSS 
 ==============================================*/
