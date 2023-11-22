@@ -4958,7 +4958,9 @@ li:nth-child(4) .menu-list__item span {
   height: 25%;
 }
 
-/*ADDITIONAL CSS */
+/*==============================================
+ADDITIONAL CSS 
+==============================================*/
 
 /* Base Styles */
 body {
@@ -4972,6 +4974,7 @@ a, .btn-link {
     color: #110F10;
 }
 
+/* Theme invert: Elements that should switch their colors based on the theme */
 .theme-invert {
     transition: color 0.3s ease, filter 0.3s ease;
 }
@@ -5010,6 +5013,31 @@ body[data-theme='dark'] .hamburger__inner::after {
     background-color: #ffffff;
 }
 
+/* Dark Theme SVG */
+#darkThemeSVG {
+    display: none;
+}
+
+body[data-theme='dark'] #lightThemeSVG {
+    display: none;
+}
+
+body[data-theme='dark'] #darkThemeSVG {
+    display: inline;
+}
+
+/* DROPDOWN NAVBAR INVERT */
+.dropdown-nav .navbar {
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: background-color 0.3s ease;
+}
+
+/* Dark Theme Styles for Dropdown Navbar */
+.dropdown-nav body[data-theme='dark'] .navbar {
+    color: #110F10;
+    background-color: rgba(17, 15, 16, 0.5);
+}
+
 /* Theme Toggle, Logo, and Dropdown Navbar Fade on Menu Open */
 #themeToggle,
 .logo-link img,
@@ -5023,4 +5051,10 @@ body[data-theme='dark'] .hamburger__inner::after {
 .menu-open .dropdown-nav .navbar {
     opacity: 0;
 }
+/* Theme Toggle, Logo, and Dropdown Navbar Fade on Menu Open */
+
+/*==============================================
+ADDITIONAL CSS 
+==============================================*/
+
 /* sourceMappingURL=style.css.map */
