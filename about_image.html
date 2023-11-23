@@ -1,429 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8" />
     <title>DM DIGITAL MEDIA</title>
-
-	<!-- Meta Data -->
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="format-detection" content="telephone=no"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="format-detection" content="telephone=no"/>
     <meta name="format-detection" content="address=no"/>
     <meta name="author" content="DM4K" />
     <meta name="description" content="A trendy, minimalistic and ultra modern HTML5 template for digital agency." />
-
-    <!-- Twitter data -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@DM4Ks">
     <meta name="twitter:title" content="DM4K">
     <meta name="twitter:description" content="A trendy, minimalistic and ultra modern HTML5 template for digital agency.">
     <meta name="twitter:image" content="../assets/images/social.jpg">
-
-    <!-- Open Graph data -->
     <meta property="og:title" content="DM4K" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="your url website" />
     <meta property="og:image" content="assets/images/social.jpg" />
     <meta property="og:description" content="A trendy, minimalistic and ultra modern HTML5 template for digital agency." />
     <meta property="og:site_name" content="DM4K" />
-
-	<!-- Favicons -->
-	<link rel="apple-touch-icon" sizes="144x144" href="../assets/images/favicons/apple-touch-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="../assets/images/favicons/apple-touch-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="../assets/images/favicons/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="57x57" href="../assets/images/favicons/apple-touch-icon-57x57.png">
-	<link rel="shortcut icon" href="../assets/images/favicons/favicon.png" type="image/png">
-
-    <!-- Styles -->
-	<link rel="stylesheet" type="text/css" href="../assets/styles/style.css"/>
-	
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q0T3M5CP45"></script>
-	<script>
-  	window.dataLayer = window.dataLayer || [];
- 	 function gtag(){dataLayer.push(arguments);}
- 	 gtag('js', new Date());
- 	 gtag('config', 'G-Q0T3M5CP45');
-	</script>
+    <link rel="apple-touch-icon" sizes="144x144" href="../assets/images/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../assets/images/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../assets/images/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="../assets/images/favicons/apple-touch-icon-57x57.png">
+    <link rel="shortcut icon" href="../assets/images/favicons/favicon.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="../assets/styles/style.css"/>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q0T3M5CP45"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-Q0T3M5CP45');
+    </script>
 </head>
-	
+
 <body class="dropdown-nav">
     <!-- Preloader -->
     <div class="preloader">
-	    <div class="preloader__wrap">
-	        <img class="preloader__logo" src="assets/images/logo_white.svg" alt="ARTEM">
-		    <div class="preloader__progress"><span></span></div>
-		</div>
-	</div>
+        <div class="preloader__wrap">
+            <img class="preloader__logo" src="assets/images/logo_white.svg" alt="ARTEM">
+            <div class="preloader__progress"><span></span></div>
+        </div>
+    </div>
 
-     <!-- Top -->
-	<nav class="navbar">
-	         <div class="mr-auto logo-container">
-	     <a class="logo-link" href="index.html">
-		<!-- Dark logo -->
-    		<img class="logotype logotype__front dark-logo theme-invert" src="../assets/images/logo.svg" alt="Logo" />
-  		<!-- Light logo -->
-  		<img class="logotype logotype__back light-logo theme-invert" src="../assets/images/logo_white.svg" alt="Logo" />
-</a>
+    <!-- Top -->
+    <nav class="navbar">
+        <div class="mr-auto logo-container">
+            <a class="logo-link" href="index.html">
+                <img class="logotype logotype__front dark-logo theme-invert" src="../assets/images/logo.svg" alt="Logo" />
+                <img class="logotype logotype__back light-logo theme-invert" src="../assets/images/logo_white.svg" alt="Logo" />
+            </a>
+        </div>
+        <div class="ml-sm-auto">
+            <!-- Theme Toggle -->
+            <button id="themeToggle" style="cursor: pointer; margin-right: 10px; margin-left:20px; background: none; border: none; padding: 0;">
+                <img id="lightThemeSVG" src="assets/images/toggle_moon.svg" alt="Light Theme Icon" width="20">
+                <img id="darkThemeSVG" src="assets/images/toggle_sun.svg" alt="Dark Theme Icon" width="20" style="display:none;">
+            </button>
+            
+            <!-- Hamburger -->
+            <button class="hamburger zoom-cursor" type="button" style="z-index: 1002;">
+                <span class="hamburger__inner"></span>
+            </button>
+        </div>
+    </nav>
+    <!-- /Top -->
 
-	    </div>
-		<div class="ml-sm-auto">
-			 <!-- Theme Toggle -->
-       			 <button id="themeToggle" style="cursor: pointer; margin-right: 10px; margin-left:20px; background: none; border: none; padding: 0;">
-   			 <!-- Light Theme SVG (Visible by default) -->
-   			 <img id="lightThemeSVG" src="assets/images/toggle_moon.svg" alt="Light Theme Icon" width="20">
-   			 <!-- Dark Theme SVG (Hidden by default) -->
-			<img id="darkThemeSVG" src="assets/images/toggle_sun.svg" alt="Dark Theme Icon" width="20">
-			 </button>
-			
-			 <!-- Theme Toggle using Hamburger -->
-	        <button class="hamburger zoom-cursor" type="button" style="z-index: 1002;">
-	            <span class="hamburger__inner"></span>
-	        </button>
-	    </div>
-	</nav>
-	<!-- /Top -->
+    <!-- Intro -->
+    <header class="header-page header-fullscreen header-page--gutterBottom overlay overlay--45">
+        <video id="responsive-video" autoplay loop muted>
+            <source src="../about_header/about_header.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="header-page__container-fluid align-items-end">
+            <div class="row no-gutters">
+                <div class="col-md-12 col-lg-6">
+                    <div class="tail header-page__description">DIGITAL MEDIA SPECIALIST</div>
+                </div>
+                <div class="col-md-12 col-lg-6 text-lg-right">
+                    <a class="btn-link btn-link--circle-right" href="#start">MY STORY<i class="circle circle--white circle--right icon-down-open"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- /Intro -->
 
-	   <!-- Intro -->
-	<header class="header-page header-fullscreen header-page--gutterBottom overlay overlay--45">
-	    <video id="responsive-video" autoplay loop muted> <!-- class="jarallax-video"*/ -->
-	        <source src="../about_header/about_header.mp4" type="video/mp4">
-	        Your browser does not support the video tag.
-	    </video>
-	    <div class="header-page__container-fluid align-items-end">
-	        <div class="row no-gutters">
-	            <div class="col-md-12 col-lg-6">
-	                <div class="tail header-page__description">DIGITAL MEDIA SPECIALIST</div>
-	            </div>
-	            <div class="col-md-12 col-lg-6 text-lg-right">
-	                <a class="btn-link btn-link--circle-right" href="!#start">MY STORY<i class="circle circle--white circle--right icon-down-open"></i></a>
-	            </div>
-	        </div>
-	    </div>
-	</header>
-	<!-- /Intro -->
-
-		
-	<!-- The Story -->
-	<article id="start" class="caption-single container">
+    <!-- The Story -->
+    <article id="start" class="caption-single container">
         <div class="row">
-		    <div class="col-12 col-lg-3">
-			    <h4 class="title title--overhead js-lines">DEION IS</h4>
-			</div>
-			<div class="col-12 col-lg-9">
-				<h2 class="title title--h4 js-lines">Where Technology Meets Creativity</h2>
-				<div class="description noGutters-Bottom js-block">
-				    <p class="paragraph noGutters-Bottom">In every video I make, I'm telling a story that goes beyond just images. It's about creating a feeling, and I love this work because it's about making something that speaks to people.</p>
-			    </div>
-			</div>
-		</div>
-	</article>
+            <div class="col-12 col-lg-3">
+                <h4 class="title title--overhead js-lines">DEION IS</h4>
+            </div>
+            <div class="col-12 col-lg-9">
+                <h2 class="title title--h4 js-lines">Where Technology Meets Creativity</h2>
+                <div class="description noGutters-Bottom js-block">
+                    <p class="paragraph noGutters-Bottom">In every video I make, I'm telling a story that goes beyond just images. It's about creating a feeling, and I love this work because it's about making something that speaks to people.</p>
+                </div>
+            </div>
+        </div>
+    </article>
     <!-- /The Story -->
 
-	<!-- WeDo -->
-	<article class="caption-single container">
+    <!-- WeDo -->
+    <article class="caption-single container">
         <div class="row">
-		    <div class="col-12 col-lg-3">
-			    <h4 class="title title--overhead js-lines">WHAT I DO</h4>
-			</div>
-			<div class="col-12 col-lg-9">
-				<h2 class="title title--h4 js-lines">Video Production as an Immersive Experience:<br>From Planning to Distribution</h2>
-				<div class="description js-block">
-				    <p class="paragraph">For me, video is all about capturing real emotions and moments. It's not just the final video that matters, but how I get there – turning an idea into something everyone can watch and feel connected to.</p>
-			    </div>
-			</div>
-			<div class="col-12 col-md-6 col-lg-4 offset-lg-3 mt-3 mt-sm-0">
-				<h4 class="title title--h6">PRODUCTION</h4>
-				<ul class="list-unstyled list-block mb-4 mb-sm-0">
-					<li>Cinematography</li>
-					<li>Camera Rigging</li>
-					<li>Lighting & Grip</li>
-					<li>Field Audio</li>
-					<li>Motion Graphic Design</li>
-					<li>Engineering Graphics</li>
-					<li>3D Design & Animation</li>
-					<li>Web Design</li>
-					<li>3D Design & Animation</li>
-					<li>Production Management</li>
-					<li>Equipment Management</li>
-				</ul>
-			</div>
-			<div class="col-12 col-md-6 col-lg-5">
-				<h4 class="title title--h6">DIGITAL IMAGING</h4>
-				<ul class="list-unstyled list-block">
-				    <li><strong>ADOBE CC SUITE</strong></li>
-				    <li>After Effects</li>
-				    <li>Premiere</li>
-				    <li>Adobe Media Encoder</li>
-				    <li>Adobe Photoshop</li>
-				    <li>Adobe Illustrator</li>
-				    <li>Adobe Substance 3D Suite</li>
-				    <li><strong>AUTODESK CADD & 3D CONTENT CREATION SUITE</strong></li>
-				    <li>Maya</li>
-				    <li>AutoCAD</li>
-				    <li>Revit</li>
-				<li><strong>GENERAL 3D APPS</strong></li>
-				<li>Blender</li>
-				    <li>Topogun 3</li>
-				</ul>
-
-				</ul>
-			</div>
-		</div>
-	</article>
+            <div class="col-12 col-lg-3">
+                <h4 class="title title--overhead js-lines">WHAT I DO</h4>
+            </div>
+            <div class="col-12 col-lg-9">
+                <h2 class="title title--h4 js-lines">Video Production as an Immersive Experience:<br>From Planning to Distribution</h2>
+                <div class="description js-block">
+                    <p class="paragraph">For me, video is all about capturing real emotions and moments. It's not just the final video that matters, but how I get there – turning an idea into something everyone can watch and feel connected to.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 offset-lg-3 mt-3 mt-sm-0">
+                <h4 class="title title--h6">PRODUCTION</h4>
+                <ul class="list-unstyled list-block mb-4 mb-sm-0">
+                    <li>Cinematography</li>
+                    <li>Camera Rigging</li>
+                    <li>Lighting & Grip</li>
+                    <li>Field Audio</li>
+                    <li>Motion Graphic Design</li>
+                    <li>Engineering Graphics</li>
+                    <li>3D Design & Animation</li>
+                    <li>Web Design</li>
+                    <li>3D Design & Animation</li>
+                    <li>Production Management</li>
+                    <li>Equipment Management</li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-6 col-lg-5">
+                <h4 class="title title--h6">DIGITAL IMAGING</h4>
+                <ul class="list-unstyled list-block">
+                    <li><strong>ADOBE CC SUITE</strong></li>
+                    <li>After Effects</li>
+                    <li>Premiere</li>
+                    <li>Adobe Media Encoder</li>
+                    <li>Adobe Photoshop</li>
+                    <li>Adobe Illustrator</li>
+                    <li>Adobe Substance 3D Suite</li>
+                    <li><strong>AUTODESK CADD & 3D CONTENT CREATION SUITE</strong></li>
+                    <li>Maya</li>
+                    <li>AutoCAD</li>
+                    <li>Revit</li>
+                    <li><strong>GENERAL 3D APPS</strong></li>
+                    <li>Blender</li>
+                    <li>Topogun 3</li>
+                </ul>
+            </div>
+        </div>
+    </article>
     <!-- /WeDo -->
-		
-	<!-- Team 
-	<article class="caption-single container">
-        <div class="row">
-		    <div class="col-12 col-lg-3">
-			    <h4 class="title title--overhead js-lines">Our team </h4>
-			</div>
-			<div class="col-12 col-lg-9">
-				<h2 class="title title--h4 js-lines">A multi-disciplinary team of creators.</h2>
-			</div>
-		</div>
-	</article>
 
-	<div class="container-fluid container-no-gutters mb-3 mb-sm-4">
-		<div class="row">
-			<!-- itemCard 
-			<div class="col-12 col-sm-6 col-lg-4 col-xl-3 itemCard">
-				<div class="itemCard__imageWrap reveal">
-					<img class="itemCard__image lazyload" src="assets/img/person.jpg" alt="">
-				</div>
-				<div class="itemCard__header">
-					<h4 class="title title--h6 itemCard__title">Jeremy Evans</h4>
-					<h5 class="title--overhead">CEO</h5>
-				</div>
-			</div>
-			<!-- /itemCard -->
-			<!-- itemCard 
-			<div class="col-12 col-sm-6 col-lg-4 col-xl-3 itemCard">
-			    <div class="itemCard__imageWrap reveal">
-					<img class="itemCard__image lazyload" src="assets/img/person.jpg" alt="">
-				</div>
-                <div class="itemCard__header">
-					<h4 class="title title--h6 itemCard__title">Lisa Wright</h4>
-					<h5 class="title--overhead">Designer</h5>
-				</div>
-			</div>
-			<!-- /itemCard -->
-			<!-- itemCard
-			<div class="col-12 col-sm-6 col-lg-4 col-xl-3 itemCard">
-				<div class="itemCard__imageWrap reveal">
-					<img class="itemCard__image lazyload" src="assets/img/person.jpg" alt="">
-				</div>
-                <div class="itemCard__header">
-					<h4 class="title title--h6 itemCard__title">Raymond West</h4>
-					<h5 class="title--overhead">Lead Developer</h5>
-				</div>
-			</div>
-			<!-- /itemCard -->
-			<!-- itemCard 
-			<div class="col-12 col-sm-6 col-lg-4 col-xl-3 itemCard">
-				<div class="itemCard__imageWrap reveal">
-					<img class="itemCard__image lazyload" src="assets/img/person.jpg" alt="">
-				</div>
-                <div class="itemCard__header">
-					<h4 class="title title--h6 itemCard__title">Leona Ellis</h4>
-					<h5 class="title--overhead">Art Director</h5>
-				</div>
-			</div>
-			<!-- itemCard -->
-		</div>
-	</div>
-    <!-- /Team -->
-
-    <!-- Awards
-	<article class="caption-single container">
-        <div class="row">
-			<div class="col-12">
-				<h2 class="title title--h4 js-lines">Accolades</h2>
-			</div>
-		</div>
-	</article>
-	
-    <div class="container">
-	    <div class="row">
-			<div class="col-12">
-			    <div class="flex-table">
-				    <div class="flex-table__thead">
-					    <div class="flex-table__th col--award">Awards</div>
-						<div class="flex-table__th col--clint">Project</div>
-						<div class="flex-table__th col--year">Year</div>
-					</div>
-				    <div class="flex-table__tr">
-					    <div data-th="Awards" class="flex-table__td col--award"><strong></strong> / <span>Clayton State University</span></div>
-						<div data-th="Project" class="flex-table__td col--clint">Bachelor's of Science - Computer Science</div>
-						<div data-th="Year" class="flex-table__td col--year"><strong>2019</strong></div>
-					</div>
-				    <div class="flex-table__tr">
-					    <div data-th="Awards" class="flex-table__td col--award">CSS<strong>Design</strong>Awards / <span>Design of the Year</span></div>
-						<div data-th="Project" class="flex-table__td col--clint">Oliver Agency</div>
-						<div data-th="Year" class="flex-table__td col--year"><strong>2017</strong></div>
-					</div>
-				    <div class="flex-table__tr">
-					    <div data-th="Awards" class="flex-table__td col--award">The<strong>FWA</strong> / <span>FWA of the Day</span></div>
-						<div data-th="Project" class="flex-table__td col--clint">Cascadia Creative</div>
-						<div data-th="Year" class="flex-table__td col--year"><strong>2016</strong></div>
-					</div>
-				    <div class="flex-table__tr">
-					    <div data-th="Awards" class="flex-table__td col--award"><strong>Behance</strong> / <span>Web Design Served</span></div>
-						<div data-th="Project" class="flex-table__td col--clint">Lorex Shope</div>
-						<div data-th="Year" class="flex-table__td col--year"><strong>2016</strong></div>
-					</div>
-				    <div class="flex-table__tr">
-					    <div data-th="Awards" class="flex-table__td col--award"><strong>AWWWARDS</strong> / <span>Nominated Site of the Year</span></div>
-						<div data-th="Project" class="flex-table__td col--clint">FORZO</div>
-						<div data-th="Year" class="flex-table__td col--year"><strong>2016</strong></div>
-					</div>
-				    <div class="flex-table__tr">
-					    <div data-th="Awards" class="flex-table__td col--award"><strong>TheFWA</strong> / <span>FWA of the Day</span></div>
-						<div data-th="Project" class="flex-table__td col--clint">Fach</div>
-						<div data-th="Year" class="flex-table__td col--year"><strong>2016</strong></div>
-					</div>
-				    <div class="flex-table__tr">
-					    <div data-th="Awards" class="flex-table__td col--award"><strong>Behance</strong> / <span>Web Design Served</span></div>
-						<div data-th="Project" class="flex-table__td col--clint">bono.</div>
-						<div data-th="Year" class="flex-table__td col--year"><strong>2015</strong></div>
-					</div>
-				    <div class="flex-table__tr">
-					    <div data-th="Awards" class="flex-table__td col--award"><strong>AWWWARDS</strong> / <span>Nominated Site of the Year</span></div>
-						<div data-th="Project" class="flex-table__td col--clint">Cortana</div>
-						<div data-th="Year" class="flex-table__td col--year"><strong>2015</strong></div>
-					</div>
-				    <div class="flex-table__tr">
-					    <div data-th="Awards" class="flex-table__td col--award"><strong>Behance</strong> / <span>Web Design Served</span></div>
-						<div data-th="Project" class="flex-table__td col--clint">Details Agency</div>
-						<div data-th="Year" class="flex-table__td col--year"><strong>2015</strong></div>
-					</div>
-				</div>
-			</div>
-	    </div>
-	</div>
-	<!-- /Awards -->	
-	
-	<!-- Partners 
-	<article class="caption-single container">
-        <div class="row">
-			<div class="col-12 col-lg-9">
-				<h2 class="title title--h4 js-lines">We are proud of our partners.</h2>
-			</div>
-		</div>
-	</article>
-	
-	<div class="container mt-0 mt-sm-4">
-	    <div class="row brands-wrap">
-		    <div class="col-6 col-md-4 col-lg-3">
-			    <div class="item-brand">
-				    <a href="#"><img class="item-brand__logo" src="assets/img/logo-brand.svg" alt="Logo Brand" /></a>
-				</div>
-			</div>
-		    <div class="col-6 col-md-4 col-lg-3">
-			    <div class="item-brand">
-				    <a href="#"><img class="item-brand__logo" src="assets/img/logo-brand.svg" alt="Logo Brand" /></a>
-				</div>
-			</div>
-		    <div class="col-6 col-md-4 col-lg-3">
-			    <div class="item-brand">
-				    <a href="#"><img class="item-brand__logo" src="assets/img/logo-brand.svg" alt="Logo Brand" /></a>
-				</div>
-			</div>
-		    <div class="col-6 col-md-4 col-lg-3">
-			    <div class="item-brand">
-				    <a href="#"><img class="item-brand__logo" src="assets/img/logo-brand.svg" alt="Logo Brand" /></a>
-				</div>
-			</div>
-		    <div class="col-6 col-md-4 col-lg-3">
-			    <div class="item-brand">
-				    <a href="#"><img class="item-brand__logo" src="assets/img/logo-brand.svg" alt="Logo Brand" /></a>
-				</div>
-			</div>
-		    <div class="col-6 col-md-4 col-lg-3">
-			    <div class="item-brand">
-				    <a href="#"><img class="item-brand__logo" src="assets/img/logo-brand.svg" alt="Logo Brand" /></a>
-				</div>
-			</div>
-		    <div class="col-6 col-md-4 col-lg-3">
-			    <div class="item-brand">
-				    <a href="#"><img class="item-brand__logo" src="assets/img/logo-brand.svg" alt="Logo Brand" /></a>
-				</div>
-			</div>
-		    <div class="col-6 col-md-4 col-lg-3">
-			    <div class="item-brand">
-				    <a href="#"><img class="item-brand__logo" src="assets/img/logo-brand.svg" alt="Logo Brand" /></a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- /Partners -->
-	
-	<!-- Footer -->
-	<footer class="footer theme-invert">
-	    <div class="container-fluid">
-		    <div class="row">
-	            <div class="col-12 col-md-6 footer__left">
-				    <div>
-		                <h6 class="title title--h6 weight--300 mb--2 theme-invert">THANKS FOR WATCHING</h6>
-	                    <!-- Newsletter 
-				        <div class="form-group">
-				            <form class="newsletter-form  theme-invert" data-toggle="validator">
-					            <div class="form-inline newsletter-form__row">
-					                <input type="email" class="inputText inputText--fill theme-invert" placeholder="Enter your email..." required autocomplete="off">
-					                <button type="submit" class="btn btn__icon btn--white theme-invert "><i class="icon-arrow-right"></i></button>
-						        </div>
-					            <div id="validator-newsletter" class="form-result text-center"></div>
-				            </form>
-				        </div>
-                        <!-- /Newsletter -->
-					</div>
-		        </div>
-				
-	            <div class="col-12 col-md-6 footer__right">
-                    <ul class="listContact list-unstyled theme-invert">
-						<li><h6 class="title title--h6">OFFICE</h6></li>
-					    	<li>ATLANTA, GA</li></ul>
-			        <ul class="listContact list-unstyled theme-invert">
-						<li><h6 class="title title--h6">GET IN TOUCH</h6></li>
-                       				<li>DEION4K@GMAIL.COM</li>
-				    </ul>
-			        <ul class="listContact list-unstyled theme-invert">
-						<li><h6 class="title title--h6 theme-invert" href"https://www.youtube.com/channel/UCHYDYKA1Sj9hO9BcyC_BJHQ">SUB TO MY YOUTUBE</h6></li>
-				    </ul>
-		        </div>
-		    </div>
-		</div>
-	</footer>
-	<!-- /Footer -->
-	
-	<!-- Menu -->
-	<div class="menu">
-        <div class="menu-inner">
-		    <ul class="menu-list">
-                <li><a class="menu-list__item" href="projects.html"><span>HOME</span></a></li>
-			    <li><a class="menu-list__item" href="about_image.html"><span>ABOUT</span></a></li>
-			    <li><a class="menu-list__item" href="cam_news_liquid.html"><span>CAMERA</span></a></li>
-			    <li><a class="menu-list__item" href="cad_news_liquid.html"><span>CADD</span></a></li>
-			    <li><a class="menu-list__item" href="3D_news_liquid.html"><span>3D</span></a></li>
-			</ul>
-		</div>
-		<div class="social social--white">
-		<a class="social__link" href="https://www.youtube.com/channel/UCHYDYKA1Sj9hO9BcyC_BJHQ">YOUTUBE</a>
-			
-		</div>
-	</div>
-	<div class="ef-background"></div>
-    <!-- /Menu -->
-
-    <div class="cursor"></div>
-
-	<!-- JavaScripts -->
-	<script src="assets/js/jquery-3.3.1.min.js"></script>
-	<script src="assets/js/plugins.js"></script>
+    <!-- JavaScripts -->
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/plugins.js"></script>
     <script src="assets/js/common.js"></script>
-	<script src="assets/js/videoResizer_about.js"></script>
-
+    <script src="assets/js/videoResizer_about.js"></script>
 </body>
 </html>
