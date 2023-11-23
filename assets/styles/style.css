@@ -1437,6 +1437,7 @@ button:focus {
 .menu.menu-show .menu-list__item span {
   opacity: 1;
   transform: translate3d(0, 0%, 0);
+  transition: .3s ease;
 }
 .menu.menu-show .social {
   opacity: 1;
@@ -1516,9 +1517,11 @@ button:focus {
 }
 .menu-list.has-hovered-link .menu-list__item {
   opacity: .1;
+  transition: .3s ease;
 }
 .menu-list.has-hovered-link .menu-list__item:hover {
   opacity: 1;
+  transition: .3s ease;
 }
 .menu-list__item {
   color: #fff;
@@ -1529,6 +1532,7 @@ button:focus {
   overflow: hidden;
   position: relative;
   text-decoration: none;
+  transition: .3s ease;
 }
 @media only screen and (max-width: 1500px) {
   .menu-list__item {
