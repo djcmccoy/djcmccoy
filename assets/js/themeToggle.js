@@ -25,12 +25,12 @@ document.getElementById('themeToggle').addEventListener('click', function() {
         document.body.classList.remove('dark-theme');
         localStorage.setItem('theme', 'light');
         // Set light theme styles for the button
-        updateSwiperPaginationBulletActiveColor('#ColorForLightTheme'); 
+        updateSwiperPaginationBulletActiveColor('#110f10'); 
     } else {
         document.body.classList.add('dark-theme');
         localStorage.setItem('theme', 'dark');
         // Set dark theme styles for the button
-        updateSwiperPaginationBulletActiveColor('#110f10'); 
+        updateSwiperPaginationBulletActiveColor('#ffffff'); 
     }
 });
 
@@ -40,7 +40,7 @@ if (localStorage.getItem('theme') === 'dark') {
     updateSwiperPaginationBulletActiveColor('#110f10');
 } else {
     // Ensure light theme styles are set
-    updateSwiperPaginationBulletActiveColor('#ColorForLightTheme');
+    updateSwiperPaginationBulletActiveColor('#110f10');
 }
 
 function updateSwiperPaginationBulletActiveColor(color) {
