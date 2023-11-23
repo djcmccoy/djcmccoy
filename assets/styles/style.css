@@ -5064,6 +5064,21 @@ body[data-theme="dark"] .swiper-pagination-bullet-active {
 }
  */
 
+.header-page {
+    position: relative; /* Ensure the header has a relative position */
+    overflow: hidden; /* This will clip the video if it overflows the header's bounds */
+}
+
+#responsive-video {
+    width: 100%; /* Full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    position: absolute; /* Absolute position within the header */
+    top: 0; /* Align to the top of the header */
+    left: 0; /* Align to the left of the header */
+    z-index: -1; /* Place it under other elements in the header */
+}
+
+
 /*==============================================
 ADDITIONAL CSS 
 ==============================================*/
