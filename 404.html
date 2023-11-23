@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>ARTEM. – Contact Form</title>
+    <title>DM DIGITAL MEDIA</title>
 
 	<!-- Meta Data -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -48,18 +48,30 @@
 		</div>
 	</div>
 
-    <!-- Top -->
+     <!-- Top -->
 	<nav class="navbar">
-        <div class="mr-auto logo-container">
-            <a class="logo-link" href="index.html">
-                <img class="logotype logotype__front" src="assets/images/logo.svg" alt="ARTEM.">
-				<img class="logotype logotype__back" src="assets/images/logo_white.svg" alt="ARTEM.">
-			</a>
-        </div>
+	         <div class="mr-auto logo-container">
+	     <a class="logo-link" href="index.html">
+		<!-- Dark logo -->
+    		<img class="logotype logotype__front dark-logo theme-invert" src="../assets/images/logo.svg" alt="Logo" />
+  		<!-- Light logo -->
+  		<img class="logotype logotype__back light-logo theme-invert" src="../assets/images/logo_white.svg" alt="Logo" />
+</a>
+
+	    </div>
 		<div class="ml-sm-auto">
-			<button class="hamburger zoom-cursor" type="button">
-                <span class="hamburger__inner"></span>
-            </button>
+			 <!-- Theme Toggle -->
+       			 <button id="themeToggle" style="cursor: pointer; margin-right: 10px; margin-left:20px; background: none; border: none; padding: 0;">
+   			 <!-- Light Theme SVG (Visible by default) -->
+   			 <img id="lightThemeSVG" src="assets/images/toggle_moon.svg" alt="Light Theme Icon" width="20">
+   			 <!-- Dark Theme SVG (Hidden by default) -->
+			<img id="darkThemeSVG" src="assets/images/toggle_sun.svg" alt="Dark Theme Icon" width="20">
+			 </button>
+			
+			 <!-- Theme Toggle using Hamburger -->
+	        <button class="hamburger zoom-cursor" type="button">
+	            <span class="hamburger__inner"></span>
+	        </button>
 	    </div>
 	</nav>
 	<!-- /Top -->
@@ -93,16 +105,16 @@
 	<div class="menu">
         <div class="menu-inner">
 		    <ul class="menu-list">
-                <li><a class="menu-list__item" href="projects.html"><span>projects</span></a></li>
-			    <li><a class="menu-list__item" href="about.html"><span>studio</span></a></li>
-			    <li><a class="menu-list__item" href="news.html"><span>news</span></a></li>
-			    <li><a class="menu-list__item" href="contacts.html"><span>contact</span></a></li>
+                <li><a class="menu-list__item" href="projects.html"><span>HOME</span></a></li>
+			    <li><a class="menu-list__item" href="about_image.html"><span>ABOUT</span></a></li>
+			    <li><a class="menu-list__item" href="cam_news_liquid.html"><span>CAMERA</span></a></li>
+			    <li><a class="menu-list__item" href="cad_news_liquid.html"><span>CADD</span></a></li>
+			    <li><a class="menu-list__item" href="3D_news_liquid.html"><span>3D</span></a></li>
 			</ul>
 		</div>
 		<div class="social social--white">
-		  <a class="social__link" href="#">FB</a>
-		  <a class="social__link" href="#">TW</a>
-		  <a class="social__link" href="#">IG</a>
+		<a class="social__link" href="https://www.youtube.com/channel/UCHYDYKA1Sj9hO9BcyC_BJHQ">YOUTUBE</a>
+			
 		</div>
 	</div>
 	<div class="ef-background"></div>
@@ -113,7 +125,8 @@
 	<!-- JavaScripts -->
 	<script src="assets/js/jquery-3.3.1.min.js"></script>
 	<script src="assets/js/plugins.js"></script>
-    <script src="assets/js/common.js"></script>
+   	<script src="assets/js/common.js"></script>
+	<script src ="assets/js/themeToggle.js"></script>
 
 </body>
 </html>
