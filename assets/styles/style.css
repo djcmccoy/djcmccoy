@@ -82,6 +82,10 @@
     --light-text: black;
     --dark-bg: black;
     --dark-text: white;
+    /*ADDED*/
+    --bullet-active-bg-light: #ffffff; /* Light theme color for active bullet */
+    --bullet-active-bg-dark: #110f10;  /* Dark theme color for active bullet */
+}
 }
 
 html {
@@ -2517,7 +2521,7 @@ li:nth-child(4) .menu-list__item span {
   margin: 30px 0;
   opacity: 1;
   outline: none;
-  width: 6px;
+  width: 24px;
 }
 @media only screen and (max-width: 992px) {
   .swiper-pagination-bullet {
@@ -5044,6 +5048,15 @@ body[data-theme='dark'] #darkThemeSVG {
 .dropdown-nav.fade-out #themeToggle,
 .dropdown-nav.background-fade-out {
     opacity: 0; /* Fully transparent */
+}
+
+/* Apply SWIPER BULLET colors based on the theme */
+body[data-theme="light"] .swiper-pagination-bullet-active {
+    background: var(--bullet-active-bg-light);
+}
+
+body[data-theme="dark"] .swiper-pagination-bullet-active {
+    background: var(--bullet-active-bg-dark);
 }
 
 /*==============================================
